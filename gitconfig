@@ -1,0 +1,28 @@
+[user]
+	name = Adrien Frediani
+[alias]
+	st=status
+	br=branch
+	co=checkout
+[color]
+	ui = auto
+	interactive = auto
+[diff]
+	algorithm = histogram
+	renames = copy
+	tool = Kaleidoscope
+	wordRegex = [^[:space:]]
+	mnemonicprefix = true
+[color "branch"]
+  current = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red reverse
+  new = green reverse
+  whitespace = white reverse
+[color "status"]
+  added = green
+  changed = red
+  untracked = yellow
+  branch = magenta
