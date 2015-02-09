@@ -1,0 +1,49 @@
+# Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
+# Shortcuts
+alias g="git"
+alias s="subl"
+alias o="open"
+alias oo="open ."
+
+# List all files colorized in long format, including dot files
+alias l="ls -Gla"
+
+# List only directories
+alias lsd='ls -l | grep "^d"'
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
+
+# Git
+alias gg="subl ./.gitignore"
+
+# Get my local IP
+alias localip="ipconfig getifaddr en1"
+
+# Some tree shortcuts to see only certain depths
+alias l1="tree --dirsfirst -ChFL 1"
+alias l2="tree --dirsfirst -ChFL 2"
+alias l3="tree --dirsfirst -ChFL 3"
+alias l4="tree --dirsfirst -ChFL 4"
+alias l5="tree --dirsfirst -ChFL 5"
+alias l6="tree --dirsfirst -ChFL 6"
+
+source ~/.aliases-locations

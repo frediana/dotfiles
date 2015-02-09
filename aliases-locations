@@ -1,0 +1,5 @@
+# Directories
+alias ds="cd ~/Desktop"
+alias ods="open ~/Desktop"
+alias sp="open ~/Dropbox/Preferences/Sublime\ Text\ 3/Packages/User"
+
