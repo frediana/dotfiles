@@ -5,6 +5,8 @@
 	st=status
 	br=branch
 	co=checkout
+	ri=rebase -i
+	cp=cherry-pick
 [color]
 	ui = auto
 	interactive = auto
