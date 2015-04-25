@@ -55,4 +55,9 @@ eval "$(direnv hook bash)"
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
- export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/texbin
+
+
+
+export CLICOLOR=1
