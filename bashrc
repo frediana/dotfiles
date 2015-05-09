@@ -28,6 +28,7 @@ alias point_produit='vim ~/Dropbox/work/thoughtbot/notes/meetings/produit/produi
 alias point_web='vim ~/Dropbox/work/thoughtbot/notes/meetings/web/web.txt'
 alias point_process='vim ~/Dropbox/work/thoughtbot/notes/meetings/process/process.txt'
 alias point_standup='vim ~/Dropbox/work/thoughtbot/notes/meetings/standup/standup.txt'
+alias todo_work='vim ~/Dropbox/work/todo.txt'
 
 #### Dev ####
 alias myvim='vim ~/Dropbox/dev/vim.txt'
