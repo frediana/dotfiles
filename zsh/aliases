@@ -1,51 +1,42 @@
-# Easier navigation
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~"
-alias -- -="cd -"
+## Aliases ##
 
-# Shortcuts
+### VIM ###
+
+alias til_vim="~/dev/til/vim"
+
+### cd ###
+alias cv="cd ~/dev/cv"
+alias dotfiles="cd ~/dev/dotfiles"
+
+### Git ###
+alias amend="git commit --amend"
+alias gp="git push"
+alias gf="git fetch"
+alias gsu="git submodule update -i --recursive"
 alias g="git"
-alias s="subl"
-alias o="open"
-alias oo="open ."
 
-# List all files colorized in long format, including dot files
-alias l="ls -Gla"
+### Apache ###
 
-# List only directories
-alias lsd='ls -l | grep "^d"'
+alias restart_apache="sudo /etc/init.d/apache2 restart"
 
-# Flush Directory Service cache
-alias flush="dscacheutil -flushcache"
+### Dropbox ###
+#### 1-1 ####
+alias thomas='vim ~/Dropbox/work/thoughtbot/notes/1-1s/Thomas.txt'
+alias aurelie='vim ~/Dropbox/work/thoughtbot/notes/1-1s/Aurelie.txt'
+alias stephanie='vim ~/Dropbox/work/thoughtbot/notes/1-1s/Stephanie.txt'
+alias laurent='vim ~/Dropbox/work/thoughtbot/notes/1-1s/Laurent.txt'
+alias aline='vim ~/Dropbox/work/thoughtbot/notes/1-1s/Aline.txt'
 
-# Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+#### Points hebdos ####
+alias point_produit='vim ~/Dropbox/work/thoughtbot/notes/meetings/produit/produit.txt'
+alias point_web='vim ~/Dropbox/work/thoughtbot/notes/meetings/web/web.txt'
+alias point_process='vim ~/Dropbox/work/thoughtbot/notes/meetings/process/process.txt'
+alias point_standup='vim ~/Dropbox/work/thoughtbot/notes/meetings/standup/standup.txt'
+alias todo_work='vim ~/Dropbox/work/todo.txt'
 
-# Empty the Trash on all mounted volumes and the main HDD
-# Also, clear Apple’s System Logs to improve shell startup speed
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
-
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
-
-# Git
-alias gg="subl ./.gitignore"
-
-# Get my local IP
-alias localip="ipconfig getifaddr en1"
-
-# Some tree shortcuts to see only certain depths
-alias l1="tree --dirsfirst -ChFL 1"
-alias l2="tree --dirsfirst -ChFL 2"
-alias l3="tree --dirsfirst -ChFL 3"
-alias l4="tree --dirsfirst -ChFL 4"
-alias l5="tree --dirsfirst -ChFL 5"
-alias l6="tree --dirsfirst -ChFL 6"
-
-alias til_vim="vim ~/dev/til/vim"
+#### Dev ####
+alias myvim='vim ~/Dropbox/dev/vim.txt'
+alias ui='vim ~/Dropbox/dev/ui.txt'
+alias ux='vim ~/Dropbox/dev/ux.txt'
 
 source ~/.aliases-locations
