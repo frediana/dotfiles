@@ -46,4 +46,9 @@ alias l4="tree --dirsfirst -ChFL 4"
 alias l5="tree --dirsfirst -ChFL 5"
 alias l6="tree --dirsfirst -ChFL 6"
 
+
+# VIM
+
+alias til_vim="~/dev/til/vim"
+
 source ~/.aliases-locations
