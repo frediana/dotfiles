@@ -31,3 +31,5 @@
   	changed = red
   	untracked = yellow
   	branch = magenta
+[github]
+	user = frediana
