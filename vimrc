@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
+"""""""""""""" Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -10,21 +10,32 @@ Plugin 'bundle/ctrlp.vim'
 Plugin 'bundle/vim-airline'
 Plugin 'bundle/vim-fugitive'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-execute pathogen#infect()
-syntax on
+call vundle#end()
 filetype plugin indent on
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-
+""""""""""""" Airline settings
 let g:airline#extensions#tabline#enabled = 1
 syntax enable
 set background=dark
 
-set laststatus=2
+"""""""""""" General settings
+syntax on
+filetype plugin indent on
 
-" enable highlight search 
+set laststatus=2
+set backupdir=~/.tmp
+set directory=~/.tmp
+" set relativenumber
+set gdefault
+set autoindent
+set shiftround
+
+" Custom key maps
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+
+" Remove trailing chars on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+" enable highlight search
 set viminfo^=h
