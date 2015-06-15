@@ -1,6 +1,11 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+"""""""""""""" solarized
+syntax enable
+set background=dark
+colorscheme solarized
+
 """""""""""""" Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -15,8 +20,14 @@ filetype plugin indent on
 
 """"""""""""" Airline settings
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='solarized'
+
 syntax enable
 set background=dark
+
+:set smartcase
+:set ignorecase
+:set noantialias
 
 """""""""""" General settings
 syntax on
