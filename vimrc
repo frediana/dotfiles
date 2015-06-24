@@ -45,6 +45,10 @@ set shiftround
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
 
+" Leader commands
+:let mapleader = ","
+nnoremap <leader>. :CtrlPTag<cr>
+
 " Remove trailing chars on save
 autocmd BufWritePre * :%s/\s\+$//e
 
