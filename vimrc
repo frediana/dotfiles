@@ -48,6 +48,11 @@ imap <C-s> <esc>:w<CR>
 " Leader commands
 :let mapleader = ","
 nnoremap <leader>. :CtrlPTag<cr>
+" source $MYVIMRC reloads the saved $MYVIMRC
+:nmap <Leader>s :source $MYVIMRC
+
+" opens $MYVIMRC for editing, or use :tabedit $MYVIMRC
+:nmap <Leader>v :e $MYVIMRC
 
 " Remove trailing chars on save
 autocmd BufWritePre * :%s/\s\+$//e
