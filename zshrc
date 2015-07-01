@@ -19,15 +19,9 @@ compinit
 stty start undef
 stty stop undef
 
-# RVM 
-[[ -s "/Users/ben/.rvm/scripts/rvm" ]] && source "/Users/ben/.rvm/scripts/rvm"
-
 # Sourcing of other files
 source $HOME/dev/dotfiles/zsh/aliases
 source $HOME/dev/dotfiles/zsh/functions
 source $HOME/dev/dotfiles/zsh/prompt
 
-# Add cabal bin
-export PATH=$PATH:~/.cabal/bin
-
-export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin
+export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
