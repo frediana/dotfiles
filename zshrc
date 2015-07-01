@@ -3,7 +3,7 @@ bindkey "^N" insert-last-word
 
 # Show contents of directory after cd-ing into it
 chpwd() {
-  ls -lrthG
+    ls -lrthG
 }
 
 # Save a ton of history
