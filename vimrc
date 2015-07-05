@@ -11,9 +11,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'bundle/ctrlp.vim'
-Plugin 'bundle/vim-airline'
-Plugin 'bundle/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
