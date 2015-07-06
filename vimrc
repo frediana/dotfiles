@@ -23,9 +23,6 @@ colorscheme solarized
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='solarized'
 
-syntax enable
-set background=dark
-
 :set smartcase
 :set ignorecase
 :set noantialias
