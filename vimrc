@@ -10,6 +10,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 
+Bundle 'altercation/vim-colors-solarized'
+
 call vundle#end()
 filetype plugin indent on
 
