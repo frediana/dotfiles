@@ -1,11 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-"""""""""""""" solarized
-syntax enable
-set background=dark
-colorscheme solarized
-
 """""""""""""" Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -17,6 +12,11 @@ Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
+
+"""""""""""""" solarized
+syntax enable
+set background=dark
+colorscheme solarized
 
 """"""""""""" Airline settings
 let g:airline#extensions#tabline#enabled = 1
