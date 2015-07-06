@@ -16,7 +16,6 @@ call vundle#end()
 filetype plugin indent on
 
 """""""""""""" solarized
-syntax enable
 set background=dark
 colorscheme solarized
 
