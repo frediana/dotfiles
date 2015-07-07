@@ -1,4 +1,3 @@
-set nocompatible              " be iMproved, required
 filetype off                  " required
 
 """""""""""""" Vundle
@@ -30,6 +29,8 @@ let g:airline_theme='solarized'
 
 """""""""""" General settings
 syntax on
+set nocompatible
+filetype plugin on
 filetype plugin indent on
 
 set report=0
