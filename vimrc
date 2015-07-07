@@ -40,7 +40,21 @@ set gdefault
 set autoindent
 set shiftround
 
-" Custom key maps
+""""""""""""" Custom key maps
+
+" move to left buffer
+map  <C-Left>   <C-w><Left>
+map! <C-Left>   <Esc> <C-w><Left>
+" move to right buffer
+map  <C-Right>  <C-w><Right>
+map! <C-Right>  <Esc> <C-w><Right>
+" move to buffer above
+map  <C-Up>     <C-w><Up>
+map! <C-Up>     <Esc> <C-w><Up>
+" move to buffer below
+map  <C-Down>   <C-w><Down>
+map! <C-Down>   <Esc> <C-w><Down>
+
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
 
