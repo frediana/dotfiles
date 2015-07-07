@@ -33,8 +33,8 @@ syntax on
 filetype plugin indent on
 
 set laststatus=2
-set backupdir=~/.tmp
-set directory=~/.tmp
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
 " set relativenumber
 set gdefault
 set autoindent
