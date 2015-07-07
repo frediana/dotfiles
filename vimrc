@@ -27,6 +27,7 @@ let g:airline_theme='solarized'
 
 """""""""""" General settings
 syntax on
+set encoding=utf-8
 set nocompatible
 filetype plugin on
 filetype plugin indent on
