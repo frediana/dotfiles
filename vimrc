@@ -40,7 +40,6 @@ set wildmenu
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
-" set relativenumber
 set gdefault
 set autoindent
 set shiftround
