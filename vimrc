@@ -34,15 +34,29 @@ set encoding=utf-8
 set nocompatible
 set backspace=indent,eol,start
 
+set incsearch
+set hlsearch
+
+set autoindent
+set hidden
+set esckeys
+set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
+set list
+
+
+set ruler
+set modeline
+set modelines=5
+set foldmethod=marker
+set lazyredraw
+
 set report=0
 set laststatus=2
-set foldmethod=marker
 set wildmenu
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 set gdefault
-set autoindent
 set shiftround
 
 """"""""""""" Custom key maps
