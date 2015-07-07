@@ -6,6 +6,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'groenewege/vim-less'
 
 Bundle 'altercation/vim-colors-solarized'
 
