@@ -10,6 +10,8 @@ Plugin 'groenewege/vim-less'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
+Plugin 'vimwiki/vimwiki'
+Plugin 'tpope/vim-commentary'
 
 Bundle 'scrooloose/syntastic'
 Bundle 'altercation/vim-colors-solarized'
