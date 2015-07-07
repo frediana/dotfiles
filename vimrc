@@ -26,11 +26,12 @@ let g:airline_theme='solarized'
 :set noantialias
 
 """""""""""" General settings
+filetype plugin on
+filetype plugin indent on
+
 syntax on
 set encoding=utf-8
 set nocompatible
-filetype plugin on
-filetype plugin indent on
 
 set report=0
 set laststatus=2
