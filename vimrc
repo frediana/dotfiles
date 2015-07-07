@@ -9,6 +9,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'groenewege/vim-less'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'mattn/emmet-vim'
 
 Bundle 'scrooloose/syntastic'
 Bundle 'altercation/vim-colors-solarized'
