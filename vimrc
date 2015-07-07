@@ -7,6 +7,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'groenewege/vim-less'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 Bundle 'scrooloose/syntastic'
 Bundle 'altercation/vim-colors-solarized'
@@ -43,6 +45,11 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['jshint']
 
+"""""""""""" Ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 """""""""""" General settings
 filetype plugin on
 filetype plugin indent on
@@ -60,7 +67,6 @@ set hidden
 set esckeys
 set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
 set list
-
 
 set ruler
 set modeline
