@@ -34,6 +34,7 @@ filetype plugin indent on
 
 set laststatus=2
 set foldmethod=marker
+set wildmenu
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
