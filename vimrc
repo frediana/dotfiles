@@ -68,6 +68,11 @@ if version >= 703
     au BufWritePre tmp* setl noundofile   " to ignore file into /tmp
 endif
 
+" Doxygen
+au! Syntax {cpp,c,d,javascript}
+au Syntax {cpp,c,d,javascript} runtime syntax/doxygen.vim
+let g:doxygen_end_punctuation='[.?!]'
+
 """"""""""""" Custom key maps
 
 " move to left buffer
