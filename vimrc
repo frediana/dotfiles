@@ -8,6 +8,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'groenewege/vim-less'
 
+Bundle 'scrooloose/syntastic'
 Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
