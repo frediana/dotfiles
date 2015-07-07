@@ -32,6 +32,7 @@ let g:airline_theme='solarized'
 syntax on
 filetype plugin indent on
 
+set report=0
 set laststatus=2
 set foldmethod=marker
 set wildmenu
