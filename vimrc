@@ -59,6 +59,15 @@ set directory=~/.vim/backup
 set gdefault
 set shiftround
 
+" Undo and tags
+set cpoptions-=C
+set tags=tags;/,.tags;/,TAG;/
+if version >= 703
+    set undofile                          " to activate undofile feature
+    set undodir=~/.cache/vim/undo,.       " to store undo files in same a specific dir
+    au BufWritePre tmp* setl noundofile   " to ignore file into /tmp
+endif
+
 """"""""""""" Custom key maps
 
 " move to left buffer
