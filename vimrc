@@ -16,6 +16,7 @@ call vundle#end()
 filetype plugin indent on
 
 """""""""""""" solarized
+let &t_Co=256
 set background=dark
 colorscheme solarized
 
