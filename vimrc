@@ -68,6 +68,23 @@ if version >= 703
     au BufWritePre tmp* setl noundofile   " to ignore file into /tmp
 endif
 
+" Code formatting
+set tabstop=4
+set softtabstop=4
+set expandtab
+set textwidth=0
+set shiftwidth=4
+
+set cinoptions=
+set cinoptions+=L0.5s          " align labels at 0.5 shiftwidth
+set cinoptions+=:0.5s,=0.5s    " same for case labels and code following labels
+set cinoptions+=g0.5s,h0.5s    " same for C++ stuff
+set cinoptions+=t0             " type on the line before the function is not indented
+set cinoptions+=(0,Ws          " indent in functions ( ... ) when it breaks
+set cinoptions+=m1             " align the closing ) properly
+set cinoptions+=j1             " java/javascript -> fixes blocks
+set cinoptions+=l0.5s          " align code after label ignoring braces.
+
 " Doxygen
 au! Syntax {cpp,c,d,javascript}
 au Syntax {cpp,c,d,javascript} runtime syntax/doxygen.vim
