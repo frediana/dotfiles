@@ -33,6 +33,8 @@ syntax on
 filetype plugin indent on
 
 set laststatus=2
+set foldmethod=marker
+
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 " set relativenumber
