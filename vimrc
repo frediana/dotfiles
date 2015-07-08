@@ -12,21 +12,22 @@ Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'tpope/vim-commentary'
+Plugin 'jpo/vim-railscasts-theme'
 
 Bundle 'scrooloose/syntastic'
-Bundle 'altercation/vim-colors-solarized'
+" Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on
 
-"""""""""""""" solarized
+"""""""""""""" theming
 let &t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme railscasts
 
 """"""""""""" Airline settings
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='solarized'
+let g:airline_theme='wombat'
 
 :set smartcase
 :set ignorecase
