@@ -13,6 +13,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'tpope/vim-commentary'
 Plugin 'jpo/vim-railscasts-theme'
+Plugin 'bling/vim-bufferline'
 
 Bundle 'scrooloose/syntastic'
 " Bundle 'altercation/vim-colors-solarized'
