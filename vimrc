@@ -41,10 +41,6 @@ let g:Powerline_symbols = 'fancy'
 " }}}
 " Syntastic {{{
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_jump=1
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
@@ -55,6 +51,17 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['jshint']
+
+" }}}
+" ctl-p {{{
+
+set wildignore+=*/tmp/*,*/javascript.compressed/*,*/ext/*
+set wildignore+=*.so,*.swp,*.zip*,*.blk,*.c,*.h
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
 
 " }}}
 " Ultisnips {{{
