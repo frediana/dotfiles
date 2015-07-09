@@ -1,4 +1,4 @@
-"""""""""""""" Vundle
+" Vundle {{{
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -20,14 +20,16 @@ Bundle 'scrooloose/syntastic'
 " Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
-filetype plugin indent on
 
-"""""""""""""" theming
+" }}}
+" Colors & Theming {{{
 let &t_Co=256
 set background=dark
 colorscheme railscasts
 
-""""""""""""" Airline settings
+" }}}
+" Airline {{{
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='wombat'
 
@@ -35,7 +37,9 @@ let g:airline_theme='wombat'
 :set ignorecase
 :set noantialias
 
-"""""""""""" Syntastic
+" }}}
+" Syntastic {{{
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -51,12 +55,17 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['jshint']
 
-"""""""""""" Ultisnips
+" }}}
+" Ultisnips {{{
+
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-"""""""""""" General settings
+
+" }}}
+" Global Settings {{{
+
 filetype plugin on
 filetype plugin indent on
 
@@ -120,7 +129,15 @@ au! Syntax {cpp,c,d,javascript}
 au Syntax {cpp,c,d,javascript} runtime syntax/doxygen.vim
 let g:doxygen_end_punctuation='[.?!]'
 
-""""""""""""" Custom key maps
+" Remove trailing chars on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+" enable highlight search
+set viminfo^=h
+
+" }}}
+" Custom map key settings {{{
+
 
 " move to left buffer
 map  <C-Left>   <C-w><Left>
@@ -138,7 +155,10 @@ map! <C-Down>   <Esc> <C-w><Down>
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
 
-" Leader commands
+
+" }}}
+" Leader commands {{{
+
 :let mapleader = ","
 nnoremap <leader>. :CtrlPTag<cr>
 " source $MYVIMRC reloads the saved $MYVIMRC
@@ -147,8 +167,4 @@ nnoremap <leader>. :CtrlPTag<cr>
 " opens $MYVIMRC for editing, or use :tabedit $MYVIMRC
 :nmap <Leader>v :e $MYVIMRC
 
-" Remove trailing chars on save
-autocmd BufWritePre * :%s/\s\+$//e
-
-" enable highlight search
-set viminfo^=h
+" }}}
