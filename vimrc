@@ -14,6 +14,7 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'tpope/vim-commentary'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'bling/vim-bufferline'
+Plugin 'airblade/vim-gitgutter'
 
 Bundle 'scrooloose/syntastic'
 " Bundle 'altercation/vim-colors-solarized'
