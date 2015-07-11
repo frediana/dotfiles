@@ -16,6 +16,7 @@ Plugin 'jpo/vim-railscasts-theme'
 Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-distinguished'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 Bundle 'scrooloose/syntastic'
 " Bundle 'altercation/vim-colors-solarized'
@@ -33,8 +34,9 @@ colorscheme distinguished
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='tomorrow'
+let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
 
-:set smartcase
 :set ignorecase
 :set noantialias
 
