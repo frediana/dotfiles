@@ -90,6 +90,7 @@ set modeline
 set modelines=5
 set foldmethod=marker
 set lazyredraw
+set relativenumber
 
 set report=0
 set laststatus=2
