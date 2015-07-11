@@ -10,16 +10,12 @@ Plugin 'groenewege/vim-less'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'mattn/emmet-vim'
-Plugin 'vimwiki/vimwiki'
-Plugin 'tpope/vim-commentary'
-Plugin 'jpo/vim-railscasts-theme'
 Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-distinguished'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 Bundle 'scrooloose/syntastic'
-" Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
