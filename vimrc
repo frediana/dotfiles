@@ -15,6 +15,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Lokaltog/vim-distinguished'
 
 Bundle 'scrooloose/syntastic'
 " Bundle 'altercation/vim-colors-solarized'
@@ -25,13 +26,13 @@ call vundle#end()
 " Colors & Theming {{{
 let &t_Co=256
 set background=dark
-colorscheme railscasts
+colorscheme distinguished
 
 " }}}
 " Airline {{{
 
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='wombat'
+let g:airline_theme='tomorrow'
 
 :set smartcase
 :set ignorecase
