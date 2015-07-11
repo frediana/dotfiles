@@ -163,11 +163,16 @@ imap <C-s> <esc>:w<CR>
 " Leader commands {{{
 
 :let mapleader = ","
+
 nnoremap <leader>. :CtrlPTag<cr>
+
 " source $MYVIMRC reloads the saved $MYVIMRC
 :nmap <Leader>s :source $MYVIMRC
 
 " opens $MYVIMRC for editing, or use :tabedit $MYVIMRC
 :nmap <Leader>v :e $MYVIMRC
+
+" remove current search highlight
+:nmap <Leader><Space> :noh<CR>
 
 " }}}
