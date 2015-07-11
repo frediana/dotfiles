@@ -77,6 +77,7 @@ syntax on
 set encoding=utf-8
 set nocompatible
 set backspace=indent,eol,start
+set cursorline
 
 set incsearch
 set hlsearch
