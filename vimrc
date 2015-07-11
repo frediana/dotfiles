@@ -74,6 +74,7 @@ set encoding=utf-8
 set nocompatible
 set backspace=indent,eol,start
 set cursorline
+set colorcolumn=80
 
 set incsearch
 set hlsearch
