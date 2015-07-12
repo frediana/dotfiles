@@ -14,6 +14,7 @@ Plugin 'bling/vim-bufferline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-distinguished'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'pangloss/vim-javascript'
 
 Bundle 'scrooloose/syntastic'
 
