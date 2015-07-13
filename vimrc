@@ -166,6 +166,11 @@ map! <C-Down>   <Esc> <C-w><Down>
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
 
+" disable arrow key
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 " }}}
 " Leader commands {{{
