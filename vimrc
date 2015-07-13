@@ -188,4 +188,14 @@ nnoremap <leader>. :CtrlPTag<cr>
 " remove current search highlight
 :nmap <Leader><Space> :noh<CR>
 
+" open Dropbox
+map <Leader>dp :e ~/Dropbox<cr>
+
+" open Pomo
+map <Leader>pomo :e ~/Dropbox/pomo<cr>
+
+" open current dir
+map <Leader>n :Sex<cr>
+
+
 " }}}
