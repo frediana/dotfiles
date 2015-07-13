@@ -1,4 +1,4 @@
-" Vundle {{{
+"Dropbox Vundle {{{
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -102,7 +102,7 @@ set directory=~/.vim/backup
 set gdefault
 set shiftround
 
-" Undo and tags
+" Undo and tags {{{1
 set cpoptions-=C
 set tags=tags;/,.tags;/,TAG;/
 if version >= 703
@@ -111,7 +111,9 @@ if version >= 703
     au BufWritePre tmp* setl noundofile   " to ignore file into /tmp
 endif
 
-" Code formatting
+" 1}}}
+" Code formatting {{{1
+
 set tabstop=4
 set softtabstop=4
 set expandtab
@@ -128,18 +130,23 @@ set cinoptions+=m1             " align the closing ) properly
 set cinoptions+=j1             " java/javascript -> fixes blocks
 set cinoptions+=l0.5s          " align code after label ignoring braces.
 
-" Doxygen
+" 1}}}
+" Doxygen {{{1
+
 au! Syntax {cpp,c,d,javascript}
 au Syntax {cpp,c,d,javascript} runtime syntax/doxygen.vim
 let g:doxygen_end_punctuation='[.?!]'
 
-" Remove trailing chars on save
+" 1}}}
+" Remove trailing chars on save {{{1
 autocmd BufWritePre * :%s/\s\+$//e
 
-" enable highlight search
+" 1}}}
+" enable highlight search {{{1
+
 set viminfo^=h
 
-" }}}
+" 1}}}
 " Custom map key settings {{{
 
 
