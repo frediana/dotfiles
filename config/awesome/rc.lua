@@ -90,6 +90,11 @@ end
 -- }}}
 
 -- {{{ Menu
+--Custom menus
+
+chrome = "google-chrome"
+icedove = "icedove"
+
 -- Create a laucher widget and a main menu
 myawesomemenu = {
    { "manual", terminal .. " -e man awesome" },
@@ -98,9 +103,11 @@ myawesomemenu = {
    { "quit", awesome.quit }
 }
 
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
+mymainmenu = awful.menu({ items = { { "Terminal", terminal },
+                                    { "Chrome", chrome },
+                                    { "Mail", icedove },
                                     { "Debian", debian.menu.Debian_menu.Debian },
-                                    { "open terminal", terminal }
+                                    { "awesome", myawesomemenu, beautiful.awesome_icon }
                                   }
                         })
 
