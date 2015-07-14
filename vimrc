@@ -172,6 +172,10 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+" Properly handle multiline nav
+nnoremap j gj
+nnoremap k gk
+
 " }}}
 " Leader commands {{{
 
