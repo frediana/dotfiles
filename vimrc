@@ -201,5 +201,8 @@ map <Leader>pomo :e ~/Dropbox/pomo<cr>
 " open current dir
 map <Leader>n :Sex<cr>
 
+" witch between buffers
+noremap <tab> :bn<cr>
+noremap <S-tab> :bp<cr>
 
 " }}}
