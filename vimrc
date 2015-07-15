@@ -211,7 +211,7 @@ nnoremap k gk
 " }}}
 " Leader commands {{{
 
-:let mapleader = ","
+:let mapleader = "\<Space>"
 
 nnoremap <leader>. :CtrlPTag<cr>
 
