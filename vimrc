@@ -83,7 +83,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:ctrlp_use_caching = 1
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 
 " }}}
 " Ultisnips {{{
@@ -131,6 +131,8 @@ set directory=~/.vim/backup
 set gdefault
 set shiftround
 
+" Use Silver Searcher instead of grep
+set grepprg=ag
 " Undo and tags {{{1
 set cpoptions-=C
 set tags=tags;/,.tags;/,TAG;/
