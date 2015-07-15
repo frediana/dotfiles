@@ -133,6 +133,15 @@ set shiftround
 
 " Use Silver Searcher instead of grep
 set grepprg=ag
+
+" When at 3 spaces and I hit >>, go to 4, not 5.
+set shiftround
+
+" (Hopefully) removes the delay when hitting esc in insert mode
+set noesckeys
+set ttimeout
+set ttimeoutlen=1
+
 " Undo and tags {{{1
 set cpoptions-=C
 set tags=tags;/,.tags;/,TAG;/
