@@ -233,6 +233,9 @@ map <Leader>pomo :e ~/Dropbox/pomo<cr>
 " open current dir
 map <Leader>o :Sex<cr>
 
+" Save current file
+map <Leader>w :w<cr>
+
 " witch between buffers
 noremap <tab> :bn<cr>
 noremap <S-tab> :bp<cr>
