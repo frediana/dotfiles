@@ -25,3 +25,5 @@ source $HOME/dev/dotfiles/zsh/functions
 source $HOME/dev/dotfiles/zsh/prompt
 
 export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export VISUAL=vim
+export EDITOR="$VISUAL"
