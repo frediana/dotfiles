@@ -220,13 +220,13 @@ nnoremap <leader>. :CtrlPTag<cr>
 :nmap <Leader><Space> :noh<CR>
 
 " open Dropbox
-map <Leader>dp :e ~/Dropbox<cr>
+map <Leader>db :e ~/Dropbox<cr>
 
 " open Pomo
 map <Leader>pomo :e ~/Dropbox/pomo<cr>
 
 " open current dir
-map <Leader>n :Sex<cr>
+map <Leader>o :Sex<cr>
 
 " witch between buffers
 noremap <tab> :bn<cr>
