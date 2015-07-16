@@ -78,9 +78,9 @@ layouts =
 --end
 
 tags = {
-   names  = { "mail", "www", "terminals", "dev", "5", 6, 7, "8", "9"},
-   layout = { layouts[10], layouts[10], layouts[10], layouts[10], layouts[1],
-              layouts[1], layouts[1], layouts[1], layouts[1]
+   names  = { "mail", "www", "dev","terminals", "5", 6, 7, "8", "9"},
+   layout = { layouts[10], layouts[10], layouts[10], layouts[10], layouts[10],
+              layouts[10], layouts[10], layouts[10], layouts[10]
 }}
 
 for s = 1, screen.count() do
