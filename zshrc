@@ -1,5 +1,7 @@
 # Allow completing of the remainder of a command
 bindkey "^N" insert-last-word
+
+# Vi mode
 bindkey -v
 
 # Show contents of directory after cd-ing into it
