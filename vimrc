@@ -142,9 +142,9 @@ set grepprg=ag
 set shiftround
 
 " (Hopefully) removes the delay when hitting esc in insert mode
-set noesckeys
 set ttimeout
-set ttimeoutlen=1
+set ttimeoutlen=100
+set timeoutlen=5000
 
 " Undo and tags {{{1
 set cpoptions-=C
