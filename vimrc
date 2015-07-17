@@ -1,4 +1,9 @@
-"Dropbox Vundle {{{
+"Vundle {{{
+
+" required by Vundle
+set nocompatible
+filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -16,7 +21,6 @@ Plugin 'Lokaltog/vim-distinguished'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'pangloss/vim-javascript'
 Plugin 'godlygeek/tabular'
-
 Bundle 'scrooloose/syntastic'
 
 call vundle#end()
@@ -102,7 +106,6 @@ filetype plugin indent on
 
 syntax on
 set encoding=utf-8
-set nocompatible
 set backspace=indent,eol,start
 set cursorline
 set colorcolumn=80
