@@ -15,6 +15,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-distinguished'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'pangloss/vim-javascript'
+Plugin 'godlygeek/tabular'
 
 Bundle 'scrooloose/syntastic'
 
@@ -252,5 +253,14 @@ map <Leader>w :w<cr>
 " witch between buffers
 noremap <tab> :bn<cr>
 noremap <S-tab> :bp<cr>
+
+" tabularize =
+if exists(":Tabularize")
+      nmap <Leader>a= :Tabularize /=<CR>
+      vmap <Leader>a= :Tabularize /=<CR>
+      nmap <Leader>a: :Tabularize /:\zs<CR>
+      vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+
 
 " }}}
