@@ -5,9 +5,9 @@ alias dotfiles="vim ~/.dotfiles"
 
 ### Git ###
 alias amend="git commit --amend"
-alias gp="git push"
+alias gpm="git push origin master"
 alias gf="git fetch"
-alias gsu="git submodule update -i --recursive"
+alias gsuir="git submodule update -i --recursive"
 alias g="git"
 
 ### Apache ###
