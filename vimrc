@@ -250,8 +250,10 @@ map <Leader>pomo :e ~/Dropbox/pomo<cr>
 " open current dir
 map <Leader>o :Sex<cr>
 
-" Save current file
+" Save Quit and VSplit shortcuts
 map <Leader>w :w<cr>
+map <Leader>q :q<cr>
+map <Leader>vs :vsp<cr>
 
 " witch between buffers
 noremap <tab> :bn<cr>
