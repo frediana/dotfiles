@@ -33,3 +33,5 @@
   	branch = magenta
 [github]
 	user = frediana
+[credential]
+	helper = osxkeychain
