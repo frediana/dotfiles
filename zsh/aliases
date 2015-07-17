@@ -39,4 +39,4 @@ alias myvim='vim ~/Dropbox/dev/vim.txt'
 alias ui='vim ~/Dropbox/dev/ui.txt'
 alias ux='vim ~/Dropbox/dev/ux.txt'
 
-source ~/.aliases-locations
+source ~/.dotfiles/aliases-locations

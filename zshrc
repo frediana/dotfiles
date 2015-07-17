@@ -20,9 +20,9 @@ stty start undef
 stty stop undef
 
 # Sourcing of other files
-source $HOME/dev/dotfiles/zsh/aliases
-source $HOME/dev/dotfiles/zsh/functions
-source $HOME/dev/dotfiles/zsh/prompt
+source $HOME/.dotfiles/zsh/aliases
+source $HOME/.dotfiles/zsh/functions
+source $HOME/.dotfiles/zsh/prompt
 
 export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export VISUAL=vim
