@@ -223,6 +223,11 @@ imap <Right> <NOP>
 nnoremap j gj
 nnoremap k gk
 
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
 " }}}
 " Leader commands {{{
 
@@ -253,10 +258,6 @@ map <Leader>w :w<cr>
 map <Leader>q :q<cr>
 map <Leader>vs :vsp<cr>
 
-" witch between buffers
-noremap <tab> :bn<cr>
-noremap <S-tab> :bp<cr>
-
 " tabularize =
 if exists(":Tabularize")
     nmap <Leader>a= :Tabularize /=<CR>
@@ -264,6 +265,5 @@ if exists(":Tabularize")
     nmap <Leader>a: :Tabularize /:\zs<CR>
     vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
-
 
 " }}}
