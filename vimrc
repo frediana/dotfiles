@@ -269,4 +269,7 @@ if exists(":Tabularize")
     vmap <Leader>a: :Tabularize /:\zs<CR>
 endif
 
+" Toggle set paste/nopaste
+set pastetoggle=<leader>z
+
 " }}}
