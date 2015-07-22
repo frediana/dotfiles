@@ -91,6 +91,8 @@ set statusline+=%*
 let g:ctrlp_use_caching = 1
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 
+let g:ctrlp_regexp = 1
+
 " }}}
 " Ultisnips {{{
 
