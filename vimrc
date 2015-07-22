@@ -106,6 +106,9 @@ filetype plugin on
 filetype plugin indent on
 
 syntax on
+
+set autoread
+
 set encoding=utf-8
 set backspace=indent,eol,start
 set cursorline
