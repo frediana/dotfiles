@@ -272,4 +272,8 @@ endif
 " Toggle set paste/nopaste
 set pastetoggle=<leader>z
 
+" macros shortcuts
+nnoremap Q @q
+vnoremap Q :norm @q<cr>
+
 " }}}
