@@ -119,6 +119,7 @@ set hlsearch
 set smartcase
 
 set autoindent
+set si "smart indent
 set hidden
 set esckeys
 set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
