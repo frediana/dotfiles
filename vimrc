@@ -116,6 +116,7 @@ set colorcolumn=80
 
 set incsearch
 set hlsearch
+set smartcase
 
 set autoindent
 set hidden
