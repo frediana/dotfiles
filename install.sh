@@ -11,3 +11,5 @@ ln -sf ~/.dotfiles/vimrc ~/.vimrc
 vim +PluginInstall +qall
 
 ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
+
+ln -sf ~/.dotfiles/config/awesome/rc.lua ~/.config/awesome/rc.lua
