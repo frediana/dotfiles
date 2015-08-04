@@ -21,6 +21,8 @@ Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'pangloss/vim-javascript'
 Plugin 'godlygeek/tabular'
 Bundle 'scrooloose/syntastic'
+Bundle 'ervandew/supertab'
+Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
@@ -28,7 +30,7 @@ call vundle#end()
 " Colors & Theming {{{
 let &t_Co=256
 set background=dark
-colorscheme distinguished
+colorscheme solarized
 
 " }}}
 " Airline {{{
@@ -54,7 +56,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
-let g:airline_theme='tomorrow'
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 
@@ -75,7 +77,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jshint', 'eslint']
 
 " }}}
 " ctl-p {{{
