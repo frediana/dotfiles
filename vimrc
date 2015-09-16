@@ -269,6 +269,9 @@ map <Leader>w :w<cr>
 map <Leader>q :q<cr>
 map <Leader>vs :vsp<cr>
 
+" Buffer circle
+map <Leader><Tab> :bnext<cr>
+
 " tabularize =
 if exists(":Tabularize")
     nmap <Leader>a= :Tabularize /=<CR>
