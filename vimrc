@@ -138,6 +138,7 @@ set report=0
 set laststatus=2
 set wildmenu
 
+set backupdir-=.
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 set gdefault
@@ -159,7 +160,7 @@ set cpoptions-=C
 set tags=tags;/,.tags;/,TAG;/
 if version >= 703
     set undofile                          " to activate undofile feature
-    set undodir=~/.cache/vim/undo,.       " to store undo files in same a specific dir
+    set undodir=~/.vim/cache/undo,.       " to store undo files in same a specific dir
     au BufWritePre tmp* setl noundofile   " to ignore file into /tmp
 endif
 
