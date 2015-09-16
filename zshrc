@@ -30,4 +30,5 @@ source $HOME/.dotfiles/zsh/prompt
 export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export LANG=en.UTF-8
 export KEYTIMEOUT=1
