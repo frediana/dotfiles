@@ -19,6 +19,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'godlygeek/tabular'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Valloric/YouCompleteMe'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
