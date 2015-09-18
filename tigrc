@@ -1,6 +1,5 @@
 set show-date = relative
 set show-id = yes
-set line-graphics = utf-8
 
 color cursor default magenta
 color date cyan default
