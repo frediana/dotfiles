@@ -1,6 +1,5 @@
 set main-view = line-number:no,interval=5 id:yes date:relative author:abbreviated commit-title:yes,graph,refs,overflow=no
 
-color cursor yellow red bold
 color date cyan default
 color delimiter cyan default
 color line-number yellow default
