@@ -9,6 +9,9 @@
 	cp=cherry-pick
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    tempo=commit -a -m tempo
+    pop=reset HEAD~
+    amend=commit --amend
 [color]
 	ui = auto
 	interactive = auto
