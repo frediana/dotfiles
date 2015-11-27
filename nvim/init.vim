@@ -12,6 +12,7 @@ Bundle 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'Valloric/YouCompleteMe'
+Bundle "marijnh/tern_for_vim"
 call vundle#end()
 filetype plugin indent on
 
