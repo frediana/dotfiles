@@ -35,12 +35,12 @@ au filetype javascript setlocal sw=4 ts=4 et
 " Visual customizations {{{
 
 set colorcolumn=80
-set number
 set relativenumber
 set ruler
 set cursorline
 set title
 set titlestring=%t
+hi ColorColumn ctermbg=blue
 
 " }}}
 " Leader {{{
@@ -59,6 +59,7 @@ set directory=~/.vim/backup
 
 " }}}
 " Misc {{{
+
 set wildignore+=*/tmp/*,*/javascript.compressed/*,*/ext/*
 set wildignore+=*.so,*.swp,*.zip*,*.blk,*.c,*.h
 
@@ -67,7 +68,6 @@ set statusline+=%*
 
 colorscheme solarized
 set background=dark
-hi ColorColumn ctermbg=blue
 
 set encoding=utf-8
 set foldmethod=marker
