@@ -1,19 +1,19 @@
-syntax enable
-filetype plugin indent on
-
 " Vundle repositories {{{
 
+set nocompatible
+filetype off
 set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
-
+call vundle#begin('~/.config/nvim/bundle')
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
-
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
+filetype plugin indent on
 
 " }}}
 " Ctrlp {{{
@@ -26,7 +26,7 @@ let g:ctrlp_regexp = 1
 " Airline {{{
 
 if !exists('g:airline_symbols')
-let g:airline_symbols = {}
+	let g:airline_symbols = {}
 endif
 
 let g:airline_left_sep = '»'
@@ -93,6 +93,7 @@ set wildignore+=*.so,*.swp,*.zip*,*.blk,*.c,*.h
 set statusline+=%#warningmsg#
 set statusline+=%*
 
+syntax enable
 colorscheme solarized
 set background=dark
 
