@@ -50,6 +50,9 @@ let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 
+let g:airline_section_b = '%{strftime("%c")}'
+let g:airline_section_y = 'BN: %{bufnr("%")}'
+
 " }}}
 " Code Formatting {{{
 
@@ -102,4 +105,9 @@ set encoding=utf-8
 set foldmethod=marker
 
 autocmd BufWritePre * :%s/\s\+$//e
+
+" disable splash
+set shortmess+=I
+
+
 " }}}
