@@ -119,5 +119,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 " disable splash
 set shortmess+=I
 
+set ignorecase
+set smartcase
 
 " }}}
