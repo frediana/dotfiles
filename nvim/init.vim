@@ -122,4 +122,7 @@ set shortmess+=I
 set ignorecase
 set smartcase
 
+setlocal spell
+
 " }}}
+
