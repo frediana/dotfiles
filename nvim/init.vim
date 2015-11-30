@@ -14,7 +14,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'leafgarland/typescript-vim'
 Bundle 'scrooloose/syntastic'
-Bundle "marijnh/tern_for_vim"
+Bundle 'ternjs/tern_for_vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -154,8 +154,8 @@ map <Leader>b :make<cr>
 " Backups {{{
 
 set backupdir-=.
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+set backupdir=~/.config/nvim/backup
+set directory=~/.config/nvim/backup
 
 " }}}
 " Misc {{{
@@ -188,4 +188,6 @@ set grepprg=ag
 set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
 
 " }}}
+
+autocmd Filetype typescript call tern#Enable()
 
