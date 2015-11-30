@@ -12,6 +12,8 @@ Bundle 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'leafgarland/typescript-vim'
+Bundle 'scrooloose/syntastic'
 Bundle "marijnh/tern_for_vim"
 call vundle#end()
 filetype plugin indent on
@@ -64,6 +66,22 @@ let g:airline_section_b = '%{strftime("%c")}'
 let g:airline_section_y = 'BN: %{bufnr("%")}'
 
 " }}}
+" Syntastic {{{
+
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+
+let g:syntastic_javascript_checkers = ['tsc']
+
+" }}}
 " Code Formatting {{{
 
 set autoindent
@@ -84,12 +102,53 @@ set titlestring=%t
 hi ColorColumn ctermbg=blue
 
 " }}}
+" Keyboard shortcuts {{{
+
+map  <C-Left>   <C-w><Left>
+map! <C-Left>   <Esc> <C-w><Left>
+map  <C-Right>  <C-w><Right>
+map! <C-Right>  <Esc> <C-w><Right>
+map  <C-Up>     <C-w><Up>
+map! <C-Up>     <Esc> <C-w><Up>
+map  <C-Down>   <C-w><Down>
+map! <C-Down>   <Esc> <C-w><Down>
+
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+imap <Up> <NOP>
+imap <Down> <NOP>
+imap <Left> <NOP>
+imap <Right> <NOP>
+
+nnoremap j gj
+nnoremap k gk
+
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+" }}}
 " Leader {{{
 
 :let mapleader = "\<Space>"
 :nmap <Leader>v :e $MYVIMRC
 :nmap <Leader>s :source $MYVIMRC
 :nmap <Leader><Space> :noh<CR>
+
+map <Leader>w :w<cr>
+map <Leader>q :q<cr>
+map <Leader>vs :vsp<cr>
+
+map <Leader><Tab> :bnext<cr>
+
+map <Leader>b :make<cr>
 
 " }}}
 " Backups {{{
@@ -123,6 +182,10 @@ set ignorecase
 set smartcase
 
 setlocal spell
+
+set grepprg=ag
+
+set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
 
 " }}}
 
