@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/adrien/dev/TypeScriptSamples/todomvc'
+let g:netrw_dirhist_2='/Users/adrien/dev/TypeScriptSamples/todomvc/js'
+let g:netrw_dirhist_3='/Users/adrien/dev/TypeScriptSamples/todomvc'
+let g:netrw_dirhist_4='/Users/adrien/dev/TypeScriptSamples/todomvc/js'
+let g:netrw_dirhist_5='/Users/adrien/dev/TypeScriptSamples/todomvc'
+let g:netrw_dirhist_6='/Users/adrien/dev/TypeScriptSamples/todomvc/js'

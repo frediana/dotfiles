@@ -1,2 +1,4 @@
-.vim/.netrwhist
-.vim/bundle
+vim/.netrwhist
+nvim/.netrwhist
+vim/bundle
+vim/undo
