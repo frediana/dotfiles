@@ -192,4 +192,6 @@ set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
 
 set backspace=indent,eol,start
 
+autocmd FileType * setlocal formatoptions-=r formatoptions-=o
+
 " }}}

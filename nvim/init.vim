@@ -187,7 +187,6 @@ set grepprg=ag
 
 set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
 
+autocmd FileType * setlocal formatoptions-=r formatoptions-=o
 " }}}
-
-autocmd Filetype typescript call tern#Enable()
 
