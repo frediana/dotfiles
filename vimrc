@@ -190,4 +190,6 @@ set grepprg=ag
 
 set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
 
+set backspace=indent,eol,start
+
 " }}}
