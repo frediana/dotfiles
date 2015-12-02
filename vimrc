@@ -79,7 +79,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
-let g:syntastic_javascript_checkers = ['tsc', 'jsonlint']
+let g:syntastic_javascript_checkers = ['jshint', 'tsc', 'jsonlint']
 
 " }}}
 " Code Formatting {{{
