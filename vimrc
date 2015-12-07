@@ -14,6 +14,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'leafgarland/typescript-vim'
 Bundle 'scrooloose/syntastic'
+Plugin 'shime/vim-livedown'
 call vundle#end()
 filetype plugin indent on
 
