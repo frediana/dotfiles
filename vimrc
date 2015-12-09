@@ -145,13 +145,14 @@ nnoremap <silent> ]B :blast<CR>
 
 map <Leader>w :w<cr>
 map <Leader>q :q<cr>
-map <Leader>vs :vsp<cr>
 
 map <Leader><Tab> :bnext<cr>
 
 map <Leader>b :make<cr>
 
 map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+
+nmap <Leader><Leader> V
 
 " }}}
 " Backups {{{
