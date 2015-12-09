@@ -22,6 +22,10 @@ compinit
 stty start undef
 stty stop undef
 
+alias tmux="TERM=screen-256color-bce tmux"
+export TERM="screen-256color"
+alias tmux="tmux -2"
+
 # Sourcing of other files
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
