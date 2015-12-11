@@ -150,7 +150,7 @@ map <Leader><Tab> :bnext<cr>
 
 map <Leader>b :make<cr>
 
-map <Leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
 
 nmap <Leader><Leader> V
 
