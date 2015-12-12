@@ -35,3 +35,5 @@ export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export KEYTIMEOUT=1
+
+source /Users/adrien/.dotfiles/tmuxinator/completion/tmuxinator.zsh
