@@ -16,6 +16,8 @@ Plugin 'leafgarland/typescript-vim'
 Bundle 'scrooloose/syntastic'
 Plugin 'shime/vim-livedown'
 Plugin 'gabesoft/vim-ags'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'Shougo/vimproc.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -83,6 +85,14 @@ let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_javascript_checkers = ['jshint', 'tsc', 'jsonlint']
 
 " }}}
+" Typescript {{{
+
+autocmd FileType typescript setlocal completeopt+=menu,preview
+autocmd FileType typescript nmap <buffer> <Leader>t : <C-u>echo tsuquyomi#hint()<CR>
+autocmd FileType typescript nmap <buffer> <Leader>e <Plug>(TsuquyomiRenameSymbol)
+autocmd FileType typescript nmap <buffer> <Leader>E <Plug>(TsuquyomiRenameSymbolC)
+
+"}}}
 " Code Formatting {{{
 
 set autoindent
