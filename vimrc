@@ -19,6 +19,7 @@ Plugin 'gabesoft/vim-ags'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'tomtom/tcomment_vim'
 call vundle#end()
 filetype plugin indent on
 
