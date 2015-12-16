@@ -20,6 +20,7 @@ Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'yegappan/mru'
 call vundle#end()
 filetype plugin indent on
 
