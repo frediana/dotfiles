@@ -167,8 +167,6 @@ map <Leader>b :make<cr>
 
 map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
 
-nmap <Leader><Leader> V
-
 " }}}
 " Backups {{{
 
