@@ -21,6 +21,7 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'yegappan/mru'
+Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
@@ -166,6 +167,9 @@ map <Leader><Tab> :bnext<cr>
 map <Leader>b :make<cr>
 
 map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
+
+map <leader>k :E<cr>
+map <leader>e :NERDTreeToggle<cr>
 
 " }}}
 " Backups {{{
