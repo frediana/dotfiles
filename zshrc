@@ -26,6 +26,9 @@ alias tmux="TERM=screen-256color-bce tmux"
 export TERM="screen-256color"
 alias tmux="tmux -2"
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Sourcing of other files
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
