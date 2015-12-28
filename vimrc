@@ -190,6 +190,8 @@ map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
 
 map <leader>k :E<cr>
 
+nnoremap <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
+
 nnoremap <silent> <Leader>e :NERDTreeFind<CR>
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 
