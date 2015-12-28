@@ -1,19 +1,43 @@
-setopt prompt_subst
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' stagedstr 'M' 
-zstyle ':vcs_info:*' unstagedstr 'M' 
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' actionformats '%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
-zstyle ':vcs_info:*' formats \
-  '%F{5}[%F{2}%b%F{5}] %F{2}%c%F{3}%u%f'
-zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
-zstyle ':vcs_info:*' enable git 
-+vi-git-untracked() {
-  if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
-    git status --porcelain | grep '??' &> /dev/null ; then
-    hook_com[unstaged]+='%F{1}??%f'
-  fi  
+# Heavily inspired form skwp's prompt
+
+function set_git_prompt {
+  if [ -e '.git' -o -e '../.git' ]; then
+	branchname=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
+	git_status=`git status --porcelain | awk '{print $1}'`
+
+	git_added=`echo $git_status | grep A`
+	git_modified=`echo $git_status | grep M`
+	git_renamed=`echo $git_status | grep R`
+	git_untracked=`echo $git_status | grep \?\?`
+	git_deleted=`echo $git_status | grep D`
+
+	git_status_prompt=''
+	if [ -n "$git_added" ]; then
+	  git_status_prompt+='%{%F{green}%}✚%{%f%}'
+	fi
+	if [ -n "$git_modified" ]; then
+	  git_status_prompt+='%{%F{yellow}%}●%{%f%}'
+	fi
+	if [ -n "$git_renamed" ]; then
+	  git_status_prompt+='%{%F{yellow}%}●%{%f%}'
+	fi
+	if [ -n "$git_untracked" ]; then
+	  git_status_prompt+='%{%F{red}%}●%{%f%}'
+	fi
+	if [ -n "$git_deleted" ]; then
+	  git_status_prompt+='%{%F{red}%}-%{%f%}'
+	fi
+
+	git_prompt="($branchname$git_status_prompt) "
+  else
+	git_prompt=''
+  fi
 }
 
-precmd () { vcs_info }
-PROMPT='%F{5}[%F{2}%n%F{5}] %F{3}%3~ ${vcs_info_msg_0_} %f%# '
+precmd_functions+=set_git_prompt
+
+user_prompt='%{%F{magenta}%}%n%{%f%}'
+path_prompt='%{%F{green}%}%3~%{%f%}'
+
+setopt prompt_subst
+PROMPT='$user_prompt $path_prompt $git_prompt%{%F{yellow%}%#%{%f%}%  '
