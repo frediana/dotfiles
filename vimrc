@@ -22,6 +22,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'yegappan/mru'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 call vundle#end()
 filetype plugin indent on
 
@@ -97,6 +98,25 @@ autocmd FileType typescript nmap <buffer> <Leader>e <Plug>(TsuquyomiRenameSymbol
 autocmd FileType typescript nmap <buffer> <Leader>E <Plug>(TsuquyomiRenameSymbolC)
 
 "}}}
+" {{{ Nerd Tree
+
+let NERDTreeQuitOnOpen = 1
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeDirArrows = 1
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
+
+" }}}
 " Code Formatting {{{
 
 set autoindent
@@ -169,7 +189,9 @@ map <Leader>b :make<cr>
 map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
 
 map <leader>k :E<cr>
-map <leader>e :NERDTreeToggle<cr>
+
+nnoremap <silent> <Leader>e :NERDTreeFind<CR>
+nnoremap <Leader>f :NERDTreeToggle<Enter>
 
 nnoremap <silent> <leader>gs :Gstatus<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
