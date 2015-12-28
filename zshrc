@@ -34,6 +34,7 @@ source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/prompt
 source $HOME/.dotfiles/zsh/explicit_aliases.sh
+source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 
 export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export VISUAL=vim
