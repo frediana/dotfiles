@@ -2,7 +2,7 @@
 export CLICOLOR=1
 
 ### VIM ###
-alias dotfiles="vim ~/.dotfiles"
+alias v=vim
 
 ### Git ###
 alias gcam="git commit --amend"
