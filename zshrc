@@ -40,3 +40,6 @@ export EDITOR="$VISUAL"
 export KEYTIMEOUT=1
 
 source /Users/adrien/.dotfiles/tmuxinator/completion/tmuxinator.zsh
+
+# Autojump config
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
