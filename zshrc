@@ -1,12 +1,5 @@
 precmd_functions=()
 
-# Sourcing of other files
-source $HOME/.dotfiles/zsh/aliases
-source $HOME/.dotfiles/zsh/functions
-source $HOME/.dotfiles/zsh/prompt
-source $HOME/.dotfiles/zsh/explicit_aliases.sh
-source $HOME/.dotfiles/zsh/mandatory_aliases.sh
-
 # Allow completing of the remainder of a command
 bindkey "^N" insert-last-word
 
@@ -43,6 +36,13 @@ export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export KEYTIMEOUT=1
+
+# Sourcing of other files
+source $HOME/.dotfiles/zsh/aliases
+source $HOME/.dotfiles/zsh/functions
+source $HOME/.dotfiles/zsh/prompt
+source $HOME/.dotfiles/zsh/explicit_aliases.sh
+source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 
 source /Users/adrien/.dotfiles/tmuxinator/completion/tmuxinator.zsh
 
