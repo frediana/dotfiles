@@ -175,8 +175,8 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " Leader {{{
 
 :let mapleader = "\<Space>"
-:nmap <Leader>v :e $MYVIMRC
-:nmap <Leader>s :source $MYVIMRC
+:nmap <Leader>ev :e $MYVIMRC
+:nmap <Leader>es :source $MYVIMRC
 :nmap <Leader><Space> :noh<CR>
 
 map <Leader>w :w<cr>
