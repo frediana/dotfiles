@@ -20,6 +20,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'yegappan/mru'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'editorconfig/editorconfig-vim'
 call vundle#end()
 filetype plugin indent on
 
