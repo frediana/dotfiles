@@ -23,6 +23,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'godlygeek/tabular'
+Plugin 'vimwiki/vimwiki'
 call vundle#end()
 filetype plugin indent on
 
