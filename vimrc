@@ -90,7 +90,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 
-let g:syntastic_javascript_checkers = ['jshint', 'tsc', 'jsonlint']
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_javascript_checkers = ['jshint', 'jsonlint']
+let g:syntastic_typescript_checkers = ['tsc', 'tslint']
+let g:syntastic_typescript_tsc_args = '--target ES5'
 
 " }}}
 " Typescript {{{
