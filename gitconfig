@@ -38,3 +38,5 @@
 	user = frediana
 [credential]
 	helper = osxkeychain
+[include]
+  path = ~/.gitconfig.local
