@@ -46,3 +46,6 @@ source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 
 # Autojump config
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# Load local conf if present
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
