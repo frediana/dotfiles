@@ -40,7 +40,7 @@ export KEYTIMEOUT=1
 # Sourcing of other files
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
-source $HOME/.dotfiles/zsh/prompt
+# source $HOME/.dotfiles/zsh/prompt
 source $HOME/.dotfiles/zsh/explicit_aliases.sh
 source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 
@@ -49,3 +49,7 @@ source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 
 # Load local conf if present
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+# Prompt pure
+autoload -U promptinit && promptinit
+prompt pure
