@@ -53,3 +53,6 @@ source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 # Prompt pure
 autoload -U promptinit && promptinit
 prompt pure
+
+source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
