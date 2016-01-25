@@ -26,6 +26,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'vimwiki/vimwiki'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-dispatch'
 call vundle#end()
 filetype plugin indent on
 
