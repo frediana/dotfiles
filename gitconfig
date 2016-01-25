@@ -1,6 +1,8 @@
 [user]
 	name = Adrien Frediani
 	email = frediani.adrien@gmail.com
+[http]
+    sslVerify = false
 [alias]
 	st=status
 	br=branch
