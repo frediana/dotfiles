@@ -279,7 +279,7 @@ let g:solarized_termcolors=256      " use solarized 256 fallback
 set hlsearch
 
 " }}}
-" Load local conf if present
+" Load local conf if present {{{
 
 if filereadable(glob("~/.vimrc.local"))
 	source ~/.vimrc.local
