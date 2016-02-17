@@ -191,6 +191,8 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 cnoreabbrev X x
 
+nmap <F1> <nop>
+
 " }}}
 " Leader {{{
 
