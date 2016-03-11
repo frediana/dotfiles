@@ -42,3 +42,5 @@
 	helper = osxkeychain
 [include]
   path = ~/.gitconfig.local
+[push]
+	default = matching
