@@ -111,11 +111,11 @@ let g:UltiSnipsEditSplit="vertical"
 " Code Formatting {{{
 
 set autoindent
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
-au filetype javascript setlocal sw=4 ts=4 et
+au filetype javascript setlocal sw=2 ts=2 et
 
 " }}}
 " Visual customizations {{{
