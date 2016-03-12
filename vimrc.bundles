@@ -18,7 +18,6 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'yegappan/mru'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'tpope/vim-dispatch'
 call vundle#end()
