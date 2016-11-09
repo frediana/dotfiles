@@ -208,6 +208,9 @@ au BufWritePre tmp* setl noundofile
 " }}}
 " Misc {{{
 
+set ttyfast
+set lazyredraw
+
 set wildignore+=*/tmp/*,*/javascript.compressed/*,*/ext/*
 set wildignore+=*.so,*.swp,*.zip*,*.blk,*.c,*.h
 
