@@ -67,7 +67,8 @@ let g:syntastic_warning_symbol = "⚠"
 
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_javascript_checkers = ['jshint', 'jsonlint']
-let g:syntastic_typescript_checkers = ['tslint']
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
 let g:syntastic_typescript_tsc_args = '--target ES5'
 
 " }}}
