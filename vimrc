@@ -122,6 +122,7 @@ hi ColorColumn ctermbg=blue
 " }}}
 " Keyboard shortcuts {{{
 
+nnoremap Q <nop>
 map  <C-Left>   <C-w><Left>
 map! <C-Left>   <Esc> <C-w><Left>
 map  <C-Right>  <C-w><Right>
