@@ -10,3 +10,6 @@
 [submodule "zsh/plugins/tmuxinator"]
 	path = zsh/plugins/tmuxinator
 	url = https://github.com/tmuxinator/tmuxinator
+[submodule "dircolors-solarized"]
+	path = dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git
