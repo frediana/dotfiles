@@ -159,6 +159,9 @@ cnoreabbrev X x
 
 nmap <F1> <nop>
 
+inoremap jj <esc>
+inoremap jk <esc>
+
 " }}}
 " Leader {{{
 
