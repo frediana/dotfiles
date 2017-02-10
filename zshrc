@@ -59,3 +59,4 @@ prompt pure
 
 source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+eval $(gdircolors ~/.dotfiles/dircolors-solarized/dircolors.256dark)
