@@ -253,6 +253,12 @@ let g:solarized_termcolors=256      " use solarized 256 fallback
 
 set hlsearch
 
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
 " }}}
 " Load local conf if present {{{
 
