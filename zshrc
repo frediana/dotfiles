@@ -3,6 +3,9 @@ precmd_functions=()
 # Allow completing of the remainder of a command
 bindkey "^N" insert-last-word
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 # Vi mode
 bindkey -v
 
