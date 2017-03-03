@@ -181,7 +181,7 @@ map <Leader>q :q<cr>
 
 map <Leader><Tab> :bnext<cr>
 
-map <Leader>b :make<cr>
+map <Leader>b :npm run build<cr>
 
 map <Leader>m :MRU<cr>
 
