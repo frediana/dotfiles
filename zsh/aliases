@@ -13,6 +13,7 @@ alias gcam="git commit --amend"
 alias gf="git fetch"
 alias gr="git rebase"
 alias g="git"
+alias gg="git grep"
 
 alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
