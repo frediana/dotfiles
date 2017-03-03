@@ -19,5 +19,6 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'yegappan/mru'
 Plugin 'scrooloose/nerdtree'
+Plugin 'editorconfig/editorconfig-vim'
 call vundle#end()
 filetype plugin indent on
