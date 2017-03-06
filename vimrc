@@ -174,6 +174,7 @@ map <Leader><Tab> :bnext<cr>
 map <Leader>b :Dispatch! npm run build<cr>
 
 map <Leader>m :MRU<cr>
+map <Leader>t :!tig %<cr>
 
 map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
 
