@@ -167,6 +167,7 @@ inoremap jk <esc>
 :nmap <Leader><Space> :noh<CR>
 
 map <Leader>w :w<cr>
+map <Leader>x :x<cr>
 map <Leader>q :q<cr>
 
 map <Leader><Tab> :bnext<cr>
