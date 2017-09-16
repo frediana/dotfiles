@@ -48,7 +48,7 @@ source $HOME/.dotfiles/zsh/explicit_aliases.sh
 source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 
 # tmuxinator completion
-source $HOME/.dotfiles/zsh/plugins/tmuxinator/completion/tmuxinator.zsh
+# source $HOME/.dotfiles/tmuxinator/completion/tmuxinator.zsh
 
 # Autojump config
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
