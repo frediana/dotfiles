@@ -21,7 +21,7 @@ SAVEHIST=20000
 
 # Enable completion
 autoload -U compinit
-compinit
+compinit -u
 
 # Disable flow control commands (keeps C-s from freezing everything)
 stty start undef
@@ -59,6 +59,9 @@ source $HOME/.dotfiles/zsh/plugins/tmuxinator/completion/tmuxinator.zsh
 # Prompt pure
 autoload -U promptinit && promptinit
 prompt pure
+
+# zsh auto suggestion
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
