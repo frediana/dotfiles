@@ -111,6 +111,7 @@ au filetype javascript setlocal sw=2 ts=2 et
 
 set colorcolumn=130
 set relativenumber
+set number
 set ruler
 set cursorline
 set title
