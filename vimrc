@@ -44,12 +44,8 @@ let g:airline_symbols.whitespace = 'Ξ'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#enabled = 1
-let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
-
-" let g:airline_section_b = '%{strftime("%c")}'
-" let g:airline_section_y = 'BN: %{bufnr("%")}'
 
 " }}}
 " Syntastic {{{
@@ -223,8 +219,7 @@ set statusline+=%#warningmsg#
 set statusline+=%*
 
 syntax enable
-colorscheme solarized
-set background=dark
+colorscheme solarized8_dark
 
 set encoding=utf-8
 set foldmethod=marker
@@ -248,9 +243,6 @@ set backspace=indent,eol,start
 autocmd FileType * setlocal formatoptions-=r formatoptions-=o
 
 set laststatus=2
-
-set t_Co=256                        " force vim to use 256 colors
-let g:solarized_termcolors=256      " use solarized 256 fallback
 
 set hlsearch
 
