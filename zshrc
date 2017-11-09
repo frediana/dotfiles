@@ -36,6 +36,7 @@ export LANG=en_US.UTF-8
 
 
 export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export KEYTIMEOUT=1
