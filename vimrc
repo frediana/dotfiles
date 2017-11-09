@@ -72,6 +72,11 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " }}}
+" {{{ Deo Complete
+
+let g:deoplete#enable_at_startup = 1
+
+"}}}
 " Code Formatting {{{
 
 set autoindent
@@ -108,16 +113,6 @@ map! <C-Down>   <Esc> <C-w><Down>
 
 map <C-s> <esc>:w<CR>
 imap <C-s> <esc>:w<CR>
-
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
-imap <Up> <NOP>
-imap <Down> <NOP>
-imap <Left> <NOP>
-imap <Right> <NOP>
 
 nnoremap j gj
 nnoremap k gk
