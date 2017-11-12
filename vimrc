@@ -27,32 +27,6 @@ endif
 let g:airline_powerline_fonts = 1
 
 " }}}
-" Syntastic {{{
-
-" let g:syntastic_enable_signs=1
-" let g:syntastic_auto_jump=1
-" let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
-"
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-"
-" let g:syntastic_error_symbol = "✗"
-" let g:syntastic_warning_symbol = "⚠"
-"
-" let g:syntastic_aggregate_errors = 1
-" let g:syntastic_javascript_checkers = ['eslint', 'jsonlint']
-" let g:syntastic_javascript_eslint_exec = 'eslint_d'
-" let g:tsuquyomi_disable_quickfix = 1
-"
-let g:syntastic_yml_checkers = ['yamllint']
-"
-" highlight link SyntasticErrorSign SignColumn
-" highlight link SyntasticWarningSign SignColumn
-" highlight link SyntasticStyleErrorSign SignColumn
-" highlight link SyntasticStyleWarningSign SignColumn
-
-" }}}
 " {{{ Nerd Tree
 
 let NERDTreeQuitOnOpen = 1
