@@ -206,8 +206,6 @@ set shortmess+=I
 set ignorecase
 set smartcase
 
-setlocal spell
-
 set grepprg=ag
 
 set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
