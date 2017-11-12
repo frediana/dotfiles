@@ -182,8 +182,6 @@ set smartcase
 
 set grepprg=ag
 
-set listchars=eol:\ ,tab:\ \ ,trail:-,extends:>,precedes:<,nbsp:¤
-
 set backspace=indent,eol,start
 
 autocmd FileType * setlocal formatoptions-=r formatoptions-=o
@@ -195,7 +193,6 @@ set hlsearch
 set guifont=Inconsolata\ for\ Powerline:h15
 let g:Powerline_symbols = 'fancy'
 set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
 set termencoding=utf-8
 
 " }}}
