@@ -67,4 +67,5 @@ ln -s tigrc ~/.tigrc
 
 ## Linux
 
+My favorite distribution is Debbian and the only window manager I like to work on is [Awesome WM](https://awesomewm.org/).
 
