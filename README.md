@@ -25,11 +25,21 @@ ln -s zsh/zshrc ~/.zshrc
 
 ## vim
 
-## git
+## GIT
+
+Since ```git``` is one of my best daily work tool I'm using a bunch of alias for it. Everything is on my gitconfig config file.
+
+###  Setup GIT config
+
+```
+ln -s gitconfig ~/.gitconfig
+ln -s gitignore ~/.gitignore
+```
 
 ### TIG
 
-[Text-mode Interface for Git](https://jonas.github.io/tig/)
+[Text-mode Interface for Git](https://jonas.github.io/tig/) is a very nice, intuitive and highly configurable command line tool
+to explore GIT repository.
 
 #### Setup TIG conf
 
