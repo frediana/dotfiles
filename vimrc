@@ -8,8 +8,8 @@ endif
 " Ctrlp {{{
 
 let g:ctrlp_regexp = 1
-
 let g:ctrlp_use_caching = 0
+
 if executable('ag')
     set grepprg=ag\ --nogroup\ --nocolor
 
