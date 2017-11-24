@@ -42,8 +42,8 @@ export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 # Sourcing of other files
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
-source $HOME/.dotfiles/zsh/explicit_aliases.sh
-source $HOME/.dotfiles/zsh/mandatory_aliases.sh
+source $HOME/.dotfiles/zsh/plugins/explicit_aliases.sh
+source $HOME/.dotfiles/zsh/plugins/mandatory_aliases.sh
 
 # Autojump config
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
