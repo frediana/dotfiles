@@ -40,20 +40,23 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=0'
 export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 
-# Sourcing of other files
+# Sourcing internal stuff
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
+
+# Sourcing external plugins stuff
 source $HOME/.dotfiles/zsh/plugins/explicit_aliases.sh
 source $HOME/.dotfiles/zsh/plugins/mandatory_aliases.sh
 source $HOME/.dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Prompt pure setup and conf
+autoload -U promptinit && promptinit
+prompt pure
+
+# Solarized dircolors setup
+eval $(gdircolors ~/.dotfiles/zsh/plugins/dircolors-solarized/dircolors.256dark)
 
 # Load local conf if present
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-# Prompt pure
-autoload -U promptinit && promptinit
-prompt pure
-
-source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-eval $(gdircolors ~/.dotfiles/zsh/plugins/dircolors-solarized/dircolors.256dark)
