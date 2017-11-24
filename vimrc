@@ -85,16 +85,8 @@ map! <C-Up>     <Esc> <C-w><Up>
 map  <C-Down>   <C-w><Down>
 map! <C-Down>   <Esc> <C-w><Down>
 
-map <C-s> <esc>:w<CR>
-imap <C-s> <esc>:w<CR>
-
 nnoremap j gj
 nnoremap k gk
-
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B :bfirst<CR>
-nnoremap <silent> ]B :blast<CR>
 
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
