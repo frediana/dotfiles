@@ -1,7 +1,17 @@
-# dotfiles
+# Config
 
-To install:
+Misc config I use on my daily work.
 
-```
-./install.sh
-```
+## Mac
+
+## Linux
+
+## shell
+
+## vim
+
+## git
+
+## tmux
+
+
