@@ -11,3 +11,8 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+
+# Show contents of directory after cd-ing into it
+chpwd() {
+    ls -lrthG
+}
