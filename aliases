@@ -3,4 +3,3 @@
 alias v='vim'
 alias ll='ls -alh'
 
-source ~/.aliases-locations

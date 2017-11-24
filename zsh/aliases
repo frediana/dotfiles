@@ -38,4 +38,3 @@ alias restart_apache="sudo /etc/init.d/apache2 restart"
 
 alias todo_work='vim ~/Dropbox/work/todo.txt'
 
-source ~/.dotfiles/aliases-locations
