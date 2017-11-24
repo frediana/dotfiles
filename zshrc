@@ -44,7 +44,6 @@ export KEYTIMEOUT=1
 # Sourcing of other files
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
-# source $HOME/.dotfiles/zsh/prompt
 source $HOME/.dotfiles/zsh/explicit_aliases.sh
 source $HOME/.dotfiles/zsh/mandatory_aliases.sh
 
