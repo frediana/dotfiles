@@ -44,6 +44,7 @@ source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/plugins/explicit_aliases.sh
 source $HOME/.dotfiles/zsh/plugins/mandatory_aliases.sh
+source $HOME/.dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Autojump config
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
@@ -54,9 +55,6 @@ source $HOME/.dotfiles/zsh/plugins/mandatory_aliases.sh
 # Prompt pure
 autoload -U promptinit && promptinit
 prompt pure
-
-# zsh auto suggestion
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
