@@ -15,6 +15,7 @@ I'am using ZSH with, with only a few small, nice and easy plugins.
 * [jancy-ctrl-z](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/fancy-ctrl-z) Use Ctrl-Z to switch back to Vim
 * [expand aliases](https://github.com/jarmo/expand-aliases-oh-my-zsh) Expands aliases while typing them in terminal.
 * [mandatory aliases](http://lkdjiin.github.io/blog/2015/07/20/de-meilleurs-alias-avec-zsh/) Forces me to use alias when exists.
+* [solarized dir colors](https://github.com/seebi/dircolors-solarized) Display dirs using solarized color scheme.
 
 ### Setup ZSH config
 
