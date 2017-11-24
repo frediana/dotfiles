@@ -1,14 +1,30 @@
-# Config
+**Table of Contents**
+
+- [Introduction](#introduction)
+- [Shell](#shell)
+  - [ZSH Plugins](#zsh-plugins)
+  - [Setup ZSH config](#setup-zsh-config)
+- [vim](#vim)
+- [GIT](#git)
+  - [Setup GIT config](#setup-git-config)
+  - [TIG](#tig)
+    - [Setup TIG conf](#setup-tig-conf)
+- [tmux](#tmux)
+- [Mac](#mac)
+  - [Homebrew](#homebrew)
+- [Linux](#linux)
+
+# Introduction
 
 Misc config I use on my daily work.
 
 [solarized](http://ethanschoonover.com/solarized) is my favorite color scheme and I'm using it pretty much everywhere.
 
-## Shell
+# Shell
 
 I'am using ZSH with, with only a few small, nice and easy plugins.
 
-### ZSH Plugins
+## ZSH Plugins
 
 * [Pure prompt](https://github.com/sindresorhus/pure) Pretty, minimal and fast ZSH prompt
 * [Zsh Highling](https://github.com/zsh-users/zsh-syntax-highlighting) Fish shell like syntax highlighting for Zsh.
@@ -17,31 +33,31 @@ I'am using ZSH with, with only a few small, nice and easy plugins.
 * [mandatory aliases](http://lkdjiin.github.io/blog/2015/07/20/de-meilleurs-alias-avec-zsh/) Forces me to use alias when exists.
 * [solarized dir colors](https://github.com/seebi/dircolors-solarized) Display dirs using solarized color scheme.
 
-### Setup ZSH config
+## Setup ZSH config
 
 ```
 ln -s zsh/zshrc ~/.zshrc
 ```
 
-## vim
+# vim
 
-## GIT
+# GIT
 
 Since ```git``` is one of my best daily work tool I'm using a bunch of alias for it. Everything is on my gitconfig config file.
 
-###  Setup GIT config
+##  Setup GIT config
 
 ```
 ln -s gitconfig ~/.gitconfig
 ln -s gitignore ~/.gitignore
 ```
 
-### TIG
+## TIG
 
 [Text-mode Interface for Git](https://jonas.github.io/tig/) is a very nice, intuitive and highly configurable command line tool
 to explore GIT repository.
 
-#### Setup TIG conf
+### Setup TIG conf
 
 Setup for tig version > 2.
 
@@ -49,13 +65,13 @@ Setup for tig version > 2.
 ln -s tigrc ~/.tigrc
 ```
 
-## tmux
+# tmux
 
-## Mac
+# Mac
 
 * I'm using [iterm2](https://www.iterm2.com/) as terminal emulator.
 
-### Homebrew
+## Homebrew
 
 [Homebrew](https://brew.sh/index_fr.html) is my command line package manager and my favorite packages are:
 
@@ -65,7 +81,7 @@ ln -s tigrc ~/.tigrc
 * [tmux](https://github.com/tmux/tmux) terminal multiplexer
 * [vim](http://www.vim.org/) Come on, you know what it is.
 
-## Linux
+# Linux
 
 My favorite distribution is Debbian and the only window manager I like to work on is [Awesome WM](https://awesomewm.org/).
 
