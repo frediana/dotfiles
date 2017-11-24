@@ -27,28 +27,23 @@ compinit -u
 stty start undef
 stty stop undef
 
-alias tmux="TERM=screen-256color-bce tmux"
+# Gobals exports
 export TERM="screen-256color"
-alias tmux="tmux -2"
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-
-export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export KEYTIMEOUT=1
+
+# Path config
+export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 
 # Sourcing of other files
 source $HOME/.dotfiles/zsh/aliases
 source $HOME/.dotfiles/zsh/functions
 source $HOME/.dotfiles/zsh/explicit_aliases.sh
 source $HOME/.dotfiles/zsh/mandatory_aliases.sh
-
-# tmuxinator completion
-# source $HOME/.dotfiles/tmuxinator/completion/tmuxinator.zsh
 
 # Autojump config
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
