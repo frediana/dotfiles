@@ -12,6 +12,16 @@ Misc config I use on my daily work.
 
 ## git
 
+### TIG
+
+[Text-mode Interface for Git](https://jonas.github.io/tig/)
+
+#### Setup TiG configuration
+
+```
+ln -s tig/tig2rc ~/.tigrc
+```
+
 ## tmux
 
 
