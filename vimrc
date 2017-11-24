@@ -109,6 +109,7 @@ inoremap jk <esc>
 " Leader {{{
 
 :let mapleader = "\<Space>"
+
 :nmap <Leader>ev :e $MYVIMRC
 :nmap <Leader>es :source $MYVIMRC
 :nmap <Leader><Space> :noh<CR>
@@ -116,33 +117,12 @@ inoremap jk <esc>
 map <Leader>w :w<cr>
 map <Leader>x :x<cr>
 map <Leader>q :q<cr>
-
 map <Leader><Tab> :bnext<cr>
-
-map <Leader>b :Dispatch! npm run build<cr>
-
 map <Leader>m :MRU<cr>
-map <Leader>t :!tig %<cr>
-
 map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
-
 map <leader>k :E<cr>
 
-nnoremap <Leader>g :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
-
-nnoremap <silent> <Leader>e :NERDTreeFind<CR>
 nnoremap <Leader>f :NERDTreeToggle<Enter>
-
-nnoremap <silent> <leader>gs :Gstatus<CR>
-nnoremap <silent> <leader>gd :Gdiff<CR>
-nnoremap <silent> <leader>gc :Gcommit<CR>
-nnoremap <silent> <leader>gb :Gblame<CR>
-nnoremap <silent> <leader>gl :Glog<CR>
-nnoremap <silent> <leader>gp :Git push<CR>
-nnoremap <silent> <leader>gr :Gread<CR>
-nnoremap <silent> <leader>gw :Gwrite<CR>
-nnoremap <silent> <leader>ge :Gedit<CR>
-nnoremap <silent> <leader>gi :Git add -p %<CR>
 
 " }}}
 " Backups {{{
