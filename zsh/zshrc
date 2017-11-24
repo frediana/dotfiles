@@ -47,9 +47,6 @@ source $HOME/.dotfiles/zsh/plugins/explicit_aliases.sh
 source $HOME/.dotfiles/zsh/plugins/mandatory_aliases.sh
 source $HOME/.dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Autojump config
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
 # Load local conf if present
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
