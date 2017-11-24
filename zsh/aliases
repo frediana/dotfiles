@@ -30,11 +30,3 @@ alias gs='git status'
 alias gap='git add -p'
 alias gr='git rebase'
 
-### Apache ###
-
-alias restart_apache="sudo /etc/init.d/apache2 restart"
-
-### Dropbox ###
-
-alias todo_work='vim ~/Dropbox/work/todo.txt'
-
