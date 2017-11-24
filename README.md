@@ -2,9 +2,7 @@
 
 Misc config I use on my daily work.
 
-## Mac
-
-## Linux
+[solarized](http://ethanschoonover.com/solarized) is my favorite color scheme and I'm using it pretty much everywhere.
 
 ## Shell
 
@@ -42,4 +40,6 @@ ln -s tigrc ~/.tigrc
 
 ## tmux
 
+## Mac
 
+## Linux
