@@ -1,5 +1,3 @@
-precmd_functions=()
-
 # Allow completing of the remainder of a command
 bindkey "^N" insert-last-word
 
