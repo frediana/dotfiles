@@ -1,6 +1,3 @@
-[submodule "tmuxinator"]
-	path = tmuxinator
-	url = https://github.com/tmuxinator/tmuxinator
 [submodule "zsh/plugins/pure"]
 	path = zsh/plugins/pure
 	url = https://github.com/sindresorhus/pure
