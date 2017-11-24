@@ -43,4 +43,18 @@ ln -s tigrc ~/.tigrc
 
 ## Mac
 
+* I'm using [iterm2](https://www.iterm2.com/) as terminal emulator.
+
+### Homebrew
+
+[Homebrew](https://brew.sh/index_fr.html) is my command line package manager and my favorite packages are:
+
+* [grip](https://github.com/joeyespo/grip) Preview GitHub Markdown files.
+* [the_silver_searcher](https://geoff.greer.fm/ag/) Fast searching code tool.
+* [Homebrew](https://brew.sh/index_fr.html) is my command line package manager.
+* [tmux](https://github.com/tmux/tmux) terminal multiplexer
+* [vim](http://www.vim.org/) Come on, you know what it is.
+
 ## Linux
+
+
