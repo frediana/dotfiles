@@ -27,32 +27,43 @@ compinit -u
 stty start undef
 stty stop undef
 
-# Global exports
+alias tmux="TERM=screen-256color-bce tmux"
 export TERM="screen-256color"
+alias tmux="tmux -2"
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+
+export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export KEYTIMEOUT=1
 
-# Path exports
-export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
-
-# Load aliases
+# Sourcing of other files
 source $HOME/.dotfiles/zsh/aliases
+source $HOME/.dotfiles/zsh/functions
+# source $HOME/.dotfiles/zsh/prompt
+source $HOME/.dotfiles/zsh/explicit_aliases.sh
+source $HOME/.dotfiles/zsh/mandatory_aliases.sh
+
+# tmuxinator completion
+# source $HOME/.dotfiles/tmuxinator/completion/tmuxinator.zsh
+
+# Autojump config
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # Load local conf if present
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-# Prompt
+# Prompt pure
 autoload -U promptinit && promptinit
 prompt pure
 
-# zsh auto suggestion plugin
+# zsh auto suggestion
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Shell syntax highling plugin
 source $HOME/.dotfiles/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval $(gdircolors ~/.dotfiles/dircolors-solarized/dircolors.256dark)
