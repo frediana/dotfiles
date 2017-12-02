@@ -20,6 +20,10 @@ Misc config I use on my daily work.
 
 [solarized](http://ethanschoonover.com/solarized) is my favorite color scheme and I'm using it pretty much everywhere.
 
+## Screenshot
+
+![screenshot](https://github.com/frediana/dotfiles/raw/master/screenshot.png)
+
 # Shell
 
 I'am using ZSH with, with only a few small, nice and easy plugins.
