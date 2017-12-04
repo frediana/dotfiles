@@ -50,6 +50,13 @@ let g:NERDTreeIndicatorMapCustom = {
 
 let g:deoplete#enable_at_startup = 1
 
+" }}}
+" {{ Ale linter
+
+let g:ale_linters = {
+    \   'scss': ['sasslint'],
+\}
+
 "}}}
 " Code Formatting {{{
 
