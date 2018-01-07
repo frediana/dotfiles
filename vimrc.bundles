@@ -5,6 +5,8 @@ call vundle#begin('~/.vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sleuth'
+Plugin 'tpope/vim-sensible'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'bling/vim-airline'
