@@ -1,0 +1,5 @@
+xrandr --newmode "2016x1531_60.00"  261.55  2016 2160 2384 2752  1531 1532 1535 1584  -HSync +Vsync
+ xrandr --addmode VGA1 2016x1531_60.00
+ xrandr --output VGA1 --mode 2016x1531_60.00
+ xrandr --output LVDS1 --pos 0x1531
+
