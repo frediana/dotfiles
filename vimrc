@@ -120,6 +120,7 @@ map <Leader><Tab> :bnext<cr>
 map <Leader>m :MRU<cr>
 map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
 map <leader>k :E<cr>
+map <Leader>gd :Gdiff<cr>
 
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 
