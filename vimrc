@@ -51,13 +51,14 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:deoplete#enable_at_startup = 1
 
 " }}}
-" {{ Ale linter
+" {{{ Ale linter
 
 let g:ale_linters = {
     \   'scss': ['sasslint'],
+    \   'javascript': ['eslint'],
 \}
 
-"}}}
+" }}}
 " Code Formatting {{{
 
 set autoindent
