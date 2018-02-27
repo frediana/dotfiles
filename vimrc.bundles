@@ -21,5 +21,7 @@ Plugin 'Shougo/deoplete.nvim'
 Plugin 'roxma/nvim-yarp'
 Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'skwp/greplace.vim'
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
 call vundle#end()
 filetype plugin indent on
