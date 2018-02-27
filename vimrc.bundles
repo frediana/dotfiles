@@ -20,5 +20,6 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'roxma/nvim-yarp'
 Plugin 'roxma/vim-hug-neovim-rpc'
+Plugin 'skwp/greplace.vim'
 call vundle#end()
 filetype plugin indent on
