@@ -71,7 +71,7 @@ au filetype javascript setlocal sw=2 ts=2 et
 " }}}
 " Visual customizations {{{
 
-set colorcolumn=130
+set colorcolumn=100
 set relativenumber
 set number
 set ruler
