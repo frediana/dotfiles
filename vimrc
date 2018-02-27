@@ -144,7 +144,7 @@ au BufWritePre tmp* setl noundofile
 set ttyfast
 set lazyredraw
 
-set wildignore+=*/tmp/*,*/javascript.compressed/*,*/ext/*
+set wildignore+=*/tmp/*,*/javascript.compressed/*,*/ext/*,*/node_modules/*
 set wildignore+=*.so,*.swp,*.zip*,*.blk,*.c,*.h
 
 set statusline+=%#warningmsg#
