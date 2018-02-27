@@ -105,6 +105,9 @@ nmap <F1> <nop>
 inoremap jj <esc>
 inoremap jk <esc>
 
+nnoremap <silent> [e :ALEPrevious<CR>
+nnoremap <silent> ]e :ALENext<CR>
+
 " }}}
 " Leader {{{
 
