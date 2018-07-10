@@ -32,6 +32,7 @@ let g:airline_powerline_fonts = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeDirArrows = 1
+let NERDTreeShowHidden=1
 
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
