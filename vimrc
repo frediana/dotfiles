@@ -56,8 +56,12 @@ let g:deoplete#enable_at_startup = 1
 
 let g:ale_linters = {
     \   'scss': ['sasslint'],
-    \   'javascript': ['eslint'],
+    \   'javascript': ['eslint']
 \}
+
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_javascript_prettier_use_local_config = 1
 
 " }}}
 " Code Formatting {{{
@@ -146,14 +150,16 @@ au BufWritePre tmp* setl noundofile
 set ttyfast
 set lazyredraw
 
-set wildignore+=*/tmp/*,*/javascript.compressed/*,*/ext/*,*/node_modules/*
+set wildignore+=*/tmp/*,*/javascript.compressed/*,*/ext/*,*/node_modules/,pmu/*/dist/*
 set wildignore+=*.so,*.swp,*.zip*,*.blk,*.c,*.h
 
 set statusline+=%#warningmsg#
 set statusline+=%*
 
 syntax enable
-colorscheme solarized8_dark
+" colorscheme solarized8_dark
+set background=dark
+colorscheme solarized
 
 set encoding=utf-8
 set foldmethod=marker
