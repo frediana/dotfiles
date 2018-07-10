@@ -2,7 +2,7 @@
 export CLICOLOR=1
 
 # Aliases solarized dir colors
-alias ls='gls --color=auto'
+alias ls='gls --color=auto -a'
 alias ll='ls -al'
 
 ### VIM ###
