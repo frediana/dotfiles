@@ -131,6 +131,7 @@ map <Leader>m :MRU<cr>
 map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
 map <leader>k :E<cr>
 map <Leader>gd :Gdiff<cr>
+map <Leader>p :ALEFix<cr>
 
 map <Leader>t :Dispatch npm test<CR>
 nnoremap <Leader>f :NERDTreeToggle<Enter>
