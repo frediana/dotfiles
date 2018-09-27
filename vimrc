@@ -33,6 +33,7 @@ let NERDTreeQuitOnOpen = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeDirArrows = 1
 let NERDTreeShowHidden=1
+let g:NERDTreeWinSize=60
 
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
