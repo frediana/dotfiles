@@ -21,5 +21,6 @@ Plugin 'roxma/nvim-yarp'
 Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'skwp/greplace.vim'
 Plugin 'honza/vim-snippets'
+Plugin 'janko-m/vim-test'
 call vundle#end()
 filetype plugin indent on
