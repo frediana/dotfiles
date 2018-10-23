@@ -22,11 +22,6 @@ else
 endif
 
 " }}}
-" Airline {{{
-
-let g:airline_powerline_fonts = 1
-
-" }}}
 " {{{ Nerd Tree
 
 let NERDTreeQuitOnOpen = 1
@@ -53,6 +48,9 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:deoplete#enable_at_startup = 1
 
 " }}}
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
 " {{{ Ale linter
 
 let g:ale_linters = {
