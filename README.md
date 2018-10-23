@@ -85,6 +85,12 @@ ln -s tigrc ~/.tigrc
 * [Homebrew](https://brew.sh/index_fr.html) is my command line package manager.
 * [tmux](https://github.com/tmux/tmux) terminal multiplexer
 * [vim](http://www.vim.org/) Come on, you know what it is.
+* [fd](https://github.com/sharkdp/fd/) A simple, fast and user-friendly alternative to 'find'
+* [bat](https://github.com/sharkdp/bat) A cat(1) clone with wings.
+* [prettyping](http://denilson.sa.nom.br/prettyping/) prettyping is a wrapper around the standard ping tool, making the output prettier, more colorful, more compact, and easier to read.
+* [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) Good-lookin' diffs. Actually… nah… The best-lookin' diffs.
+* [ncdu](https://dev.yorhel.nl/ncdu) NCurses Disk Usage
+* [tldr](https://tldr.sh/) Simplified and community-driven man pages
 
 # Linux
 
