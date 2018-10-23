@@ -32,4 +32,5 @@ alias gr='git rebase'
 
 # misc
 alias cat='bat'
+alias ping='prettyping --nolegend'
 
