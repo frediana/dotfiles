@@ -18,6 +18,10 @@
   pop = reset HEAD~
   amend = commit --amend
 
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+
 [color]
 	ui = auto
 	interactive = auto
