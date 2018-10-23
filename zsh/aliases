@@ -30,3 +30,6 @@ alias gs='git status'
 alias gap='git add -p'
 alias gr='git rebase'
 
+# misc
+alias cat='bat'
+
