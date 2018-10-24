@@ -13,4 +13,5 @@ Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'janko-m/vim-test'
 Plug 'itchyny/lightline.vim'
+Plug 'elmcast/elm-vim'
 call plug#end()
