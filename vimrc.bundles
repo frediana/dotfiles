@@ -9,6 +9,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'Shougo/deoplete.nvim'
 Plug 'skwp/greplace.vim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'janko-m/vim-test'
 Plug 'itchyny/lightline.vim'
 call plug#end()
