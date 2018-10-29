@@ -7,10 +7,14 @@ Plug 'tomtom/tcomment_vim'
 Plug 'yegappan/mru'
 Plug 'scrooloose/nerdtree'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'Shougo/deoplete.nvim'
 Plug 'skwp/greplace.vim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 Plug 'janko-m/vim-test'
 Plug 'itchyny/lightline.vim'
 Plug 'elmcast/elm-vim'
