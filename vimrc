@@ -30,6 +30,8 @@ let NERDTreeDirArrows = 1
 let NERDTreeShowHidden=1
 let g:NERDTreeWinSize=60
 
+let NERDTreeIgnore = ['\.DS_Store$']
+
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
