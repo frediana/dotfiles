@@ -45,9 +45,30 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " }}}
+" {{{ Nerd tree git
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+
+" }}}
 " {{{ Deo Complete
 
 let g:deoplete#enable_at_startup = 1
+
+" }}}
+" {{{ UltiSnips
+
+let g:UltiSnipsExpandTrigger="<tab>"
 
 " }}}
 " {{{ lightline
@@ -59,12 +80,16 @@ let g:lightline = {
 
 let g:ale_linters = {
     \   'scss': ['sasslint'],
-    \   'javascript': ['eslint']
+    \   'javascript': ['eslint', 'flow']
 \}
 
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_javascript_prettier_use_local_config = 1
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:elm_syntastic_show_warnings = 1
 
 " }}}
 " Code Formatting {{{
@@ -130,12 +155,11 @@ map <Leader>x :x<cr>
 map <Leader>q :q<cr>
 map <Leader><Tab> :bnext<cr>
 map <Leader>m :MRU<cr>
-map <Leader>p :set paste<CR>"*]p:set nopaste<cr>
 map <leader>k :E<cr>
 map <Leader>gd :Gdiff<cr>
 map <Leader>p :ALEFix<cr>
 
-map <Leader>t :Dispatch npm test<CR>
+map <Leader>t :Dispatch npx jest --bail --findRelatedTests %<CR>
 nnoremap <Leader>f :NERDTreeToggle<Enter>
 
 " }}}
@@ -169,6 +193,9 @@ set encoding=utf-8
 set foldmethod=marker
 
 autocmd BufWritePre * :%s/\s\+$//e
+
+" auto set current dir
+autocmd BufEnter * lcd %:p:h
 
 " disable splash
 set shortmess+=I

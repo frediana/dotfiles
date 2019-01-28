@@ -8,6 +8,7 @@ Plug 'yegappan/mru'
 Plug 'scrooloose/nerdtree'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'skwp/greplace.vim'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -15,7 +16,5 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-Plug 'janko-m/vim-test'
 Plug 'itchyny/lightline.vim'
-Plug 'elmcast/elm-vim'
 call plug#end()
