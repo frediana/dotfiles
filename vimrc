@@ -65,6 +65,18 @@ let g:NERDTreeIndicatorMapCustom = {
 
 let g:deoplete#enable_at_startup = 1
 
+let g:deoplete#omni_patterns = {}
+
+call deoplete#custom#option('omni_patterns', {
+\ 'complete_method': 'omnifunc',
+\ 'terraform': '[^ *\t"{=$]\w*',
+\})
+
+call deoplete#initialize()
+
+let g:python_host_prog = '/Users/adrien/.pyenv/versions/neovim3/bin/python'
+let g:python3_host_prog = '/Users/adrien/.pyenv/versions/neovim3/bin/python'
+
 " }}}
 " {{{ UltiSnips
 
@@ -79,12 +91,16 @@ let g:lightline = {
 " {{{ Ale linter
 
 let g:ale_linters = {
-    \   'scss': ['sasslint'],
-    \   'javascript': ['eslint', 'flow']
+    \   'scss': ['stylelint'],
+    \   'javascript': ['eslint', 'flow'],
+    \   'typescript': ['eslint', 'tsc'],
+    \   'python': ['pylint']
 \}
 
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers['typescript'] = ['prettier']
+let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_javascript_prettier_use_local_config = 1
 
 let g:syntastic_always_populate_loc_list = 1

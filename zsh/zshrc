@@ -9,9 +9,23 @@ export EDITOR="$VISUAL"
 export KEYTIMEOUT=1
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=0'
 
+# For compilers to find zlib you may need to set:
+export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
+export CPPFLAGS="${CPPFLAGS} -I/usr/local/opt/zlib/include"
+
+# For pkg-config to find zlib you may need to set:
+export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
+
+eval "$(pyenv init -)"
+
 # Path config
 export PATH=$PATH:bin:~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+# export PATH="$PATH:/Users/adrien/Library/Python/3.7/bin"
+
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/Cellar/python/3.7.0/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 # }}}
 # {{{ Sourcings
@@ -74,3 +88,4 @@ export BAT_THEME="TwoDark"
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # }}}
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi

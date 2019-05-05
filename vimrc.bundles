@@ -20,4 +20,5 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'itchyny/lightline.vim'
+Plug 'hashivim/vim-terraform'
 call plug#end()

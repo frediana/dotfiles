@@ -6,7 +6,11 @@ alias ls='gls --color=auto -a'
 alias ll='ls -al'
 
 ### VIM ###
-alias v=vim
+alias v=nvim
+# alias python=python3
+# alias pip=pip3
+
+alias k=kubectl
 
 ### Git ###
 alias gcam="git commit --amend"
