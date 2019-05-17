@@ -93,9 +93,10 @@ let g:lightline = {
 let g:ale_linters = {
     \   'scss': ['stylelint'],
     \   'javascript': ['eslint', 'flow'],
-    \   'typescript': ['eslint', 'tsc'],
-    \   'python': ['pylint']
+    \   'typescript': ['tsserver', 'eslint'],
+    \   'python': ['flake8']
 \}
+let g:ale_linters_ignore = {'typescript': ['tslint']}
 
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
