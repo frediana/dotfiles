@@ -9,9 +9,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'skwp/greplace.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'Quramy/tsuquyomi'
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'leafgarland/typescript-vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'lifepillar/vim-solarized8'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
