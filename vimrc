@@ -104,6 +104,7 @@ let g:ale_fixers['typescript'] = ['prettier']
 let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_javascript_prettier_use_local_config = 1
 
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:elm_syntastic_show_warnings = 1
@@ -202,9 +203,12 @@ set statusline+=%#warningmsg#
 set statusline+=%*
 
 syntax enable
-" colorscheme solarized8_dark
+colorscheme solarized8
 set background=dark
-colorscheme solarized
+
+if has("termguicolors")
+  set termguicolors
+endif
 
 set encoding=utf-8
 set foldmethod=marker
