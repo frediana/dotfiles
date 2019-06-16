@@ -45,34 +45,9 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " }}}
-" {{{ Nerd tree git
-
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
-
-" }}}
 " {{{ Deo Complete
 
 let g:deoplete#enable_at_startup = 1
-
-let g:deoplete#omni_patterns = {}
-
-call deoplete#custom#option('omni_patterns', {
-\ 'complete_method': 'omnifunc',
-\ 'terraform': '[^ *\t"{=$]\w*',
-\})
-
-call deoplete#initialize()
 
 let g:python_host_prog = '/Users/adrien/.pyenv/versions/neovim3/bin/python'
 let g:python3_host_prog = '/Users/adrien/.pyenv/versions/neovim3/bin/python'
@@ -247,4 +222,3 @@ if filereadable(glob("~/.vimrc.local"))
 endif
 
 " }}}
-
