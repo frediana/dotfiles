@@ -177,13 +177,13 @@ set wildignore+=*.so,*.swp,*.zip*,*.blk,*.c,*.h
 set statusline+=%#warningmsg#
 set statusline+=%*
 
-syntax enable
-colorscheme solarized8
-set background=dark
-
+" syntax enable
 if has("termguicolors")
   set termguicolors
 endif
+set background=dark
+colorscheme solarized8_flat
+
 
 set encoding=utf-8
 set foldmethod=marker
