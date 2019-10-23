@@ -12,6 +12,12 @@ alias v=nvim
 
 alias k=kubectl
 
+alias dk=docker-compose
+
+alias t=terraform
+
+alias a=ansible-playbook
+
 ### Git ###
 alias gcam="git commit --amend"
 alias gf="git fetch"

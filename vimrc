@@ -49,8 +49,8 @@ let g:NERDTreeIndicatorMapCustom = {
 
 let g:deoplete#enable_at_startup = 1
 
-let g:python_host_prog = '/Users/adrien/.pyenv/versions/neovim3/bin/python'
-let g:python3_host_prog = '/Users/adrien/.pyenv/versions/neovim3/bin/python'
+" let g:python_host_prog = '/Users/adrien/.pyenv/shims/python3.6'
+" let g:python3_host_prog = '/Users/adrien/.pyenv/shims/python3.6'
 
 " }}}
 " {{{ UltiSnips
@@ -150,7 +150,6 @@ map <Leader><Tab> :bnext<cr>
 map <Leader>m :MRU<cr>
 map <leader>k :E<cr>
 map <Leader>gd :Gdiff<cr>
-map <Leader>p :ALEFix<cr>
 
 map <Leader>t :Dispatch npx jest --bail --findRelatedTests %<CR>
 nnoremap <Leader>f :NERDTreeToggle<Enter>

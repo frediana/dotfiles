@@ -13,12 +13,15 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'lifepillar/vim-solarized8'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'stevearc/vim-arduino'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
+  " Plug 'Shougo/deoplete.nvim'
+  " Plug 'roxma/nvim-yarp'
+  " Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'itchyny/lightline.vim'
 Plug 'hashivim/vim-terraform'

@@ -89,3 +89,19 @@ export BAT_THEME="TwoDark"
 
 # }}}
 if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/adrien/dev/axa/datastore/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/adrien/dev/axa/datastore/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/adrien/dev/axa/datastore/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/adrien/dev/axa/datastore/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/adrien/dev/axa/datastore/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/adrien/dev/axa/datastore/node_modules/tabtab/.completions/slss.zshexport PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
+export GOPATH=$HOME/go
+export AWS_SDK_LOAD_CONFIG=True
