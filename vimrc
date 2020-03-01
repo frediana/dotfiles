@@ -48,6 +48,7 @@ let g:NERDTreeIndicatorMapCustom = {
 " {{{ Deo Complete
 
 let g:deoplete#enable_at_startup = 1
+let g:deoplete_disable_auto_complete=1
 
 " let g:python_host_prog = '/Users/adrien/.pyenv/shims/python3.6'
 " let g:python3_host_prog = '/Users/adrien/.pyenv/shims/python3.6'
@@ -68,14 +69,14 @@ let g:lightline = {
 let g:ale_linters = {
     \   'scss': ['stylelint'],
     \   'javascript': ['eslint', 'flow'],
-    \   'typescript': ['tsserver', 'eslint'],
+    \   'typescript': ['eslint', 'tsserver'],
     \   'python': ['flake8']
 \}
-let g:ale_linters_ignore = {'typescript': ['tslint']}
+" let g:ale_linters_ignore = {'typescript': ['tslint']}
 
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
-let g:ale_fixers['typescript'] = ['prettier']
+let g:ale_fixers['typescript'] = ['eslint', 'prettier']
 let g:ale_fixers['scss'] = ['stylelint']
 let g:ale_javascript_prettier_use_local_config = 1
 
@@ -155,6 +156,7 @@ map <Leader><Tab> :bnext<cr>
 map <Leader>m :MRU<cr>
 map <leader>k :E<cr>
 map <Leader>gd :Gdiff<cr>
+map <Leader>p :Prettier<cr>
 
 map <Leader>t :Dispatch npx jest --bail --findRelatedTests %<CR>
 nnoremap <Leader>f :NERDTreeToggle<Enter>
